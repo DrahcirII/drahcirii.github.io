@@ -1,4 +1,7 @@
+/*Style by Drahcir-II drahcirii.tumblr.com*/
 
+
+/* Base Styling */
 @font-face{
 	font-family: 'Gothic';
 	src: url(../fonts/gothic.ttf);
@@ -22,6 +25,31 @@
 	src: url(../fonts/pixeltype.ttf);
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "gothic";
+}
+
+
+
+
 
 a:link{
 	 color: #ff8e8e;
@@ -38,16 +66,32 @@ a:visited{
 
 .btn{
 	font-family: "Gothic";
+	background-color: #ff0000;
 }
 
 
-body{
+#requiem-main {
 	background-color: #000000;
 	background-image: url("../pics/reqcheck.png");
 	background-attachment: fixed;
 	background-repeat: repeat-y repeat-x;
 	cursor: url('../pics/cursor.png'), default;
 	font-family: "Gothic";
+	 position: absolute;
+       width: 100%;
+	
+}
+
+#requiem-mobile {
+	background-color: #ffffff;
+	background-image: url("../pics/reqcheckmb.png");
+	background-attachment: fixed;
+	background-repeat: repeat-y repeat-x;
+	cursor: url('../pics/cursor.png'), default;
+	font-family: "Gothic";
+ position: absolute;
+       
+       width: 100%;
 	
 }
 
@@ -57,23 +101,25 @@ body{
 
 #robottalk{
 	 font-family: 'pixeltype';
-	 font-size: 2em;
+	 font-size: 1.5em;
 
 
 }
 
 #title{
 	font-family: 'Dampfplatz';
+	font-size: 3em;
 	
 }
 
 #subtitle{
 	font-family: 'Mirage';
+	font-size: 2em;
 }
 
 #sub-section{
 	font-family: 'Gothic';
-	font-size: 1.5em;
+	
 }
 
 
@@ -165,6 +211,18 @@ footer{
 }
 .modal-wide .modal-body {
   overflow-y: auto;
+}
+
+@media screen and (max-width: 640px) {
+    #requiem-main {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    #requiem-mobile {
+        display: none;
+    }
 }
 
 /*Loader Code*/
