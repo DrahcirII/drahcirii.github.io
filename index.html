@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html> 
+
+  <head>
+    <!--Metadata-->   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Page Data--> 
+
+<!--Changing Title Code-->
+    <script>
+
+	window.onblur = function () { document.title = 'Are you there?'; }
+
+	window.onfocus = function () { document.title = 'Requiem Graphics' }
+	</script>   
+	<script>   
+     var poemstuff = [
+
+          '<title>Requiem by Drahcir-II</title>',
+          '<title>Defy Your World</title>', 
+          '<title>Get-Req&#8217d</title>',             
+          
+              ];
+              var poemLineNumber = Math.random() * (poemstuff.length - 1);
+              poemLineNumber = poemLineNumber.toFixed(0);
+              document.write(poemstuff[poemLineNumber]);
+    </script>
+    <link id="pagestyle" rel="shortcut icon" href="Pics/logo.jpg">
+    
+    
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+
+     <!--Requiem Default Stylesheet + Style Changer-->
+       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <script>
+          function swapStyleSheet(sheet){
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+          }
+          </script>
+
+      <!--Baraja Style-->
+       <link rel="stylesheet" type="text/css" href="css/baraja.css">
+
+    <!--Scripts-->
+    <script src="js/jquery.min.js"></script>
+     <script src="js/modernizr.custom.79639.js"></script>
+      <script src="js/jquery.baraja.js"></script>
+   <script src="js/requiemtools.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/konami.js"></script>
+    
+
+
+    
+  </head> 
+
+  
+
+
+
+  <body id="filtered">
+
+  <div class="loader" style="display: none;"></div>
+   <style type="text/css">
+     .loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('pics/gear.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+  
+   </style>
+
+   <section id="about" class="konamiwrap" style="margin-bottom: 300%; margin-top: 4%;">
+       
+        <div  id="darkness" style="background-image: url(pics/corynn.png); background-attachment: fixed;  background-repeat: repeat-y; font-family: times; padding: 10px; background-repeat: repeat-y; background-size: cover; margin: 0 auto; width: 80%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; background-color: #111111; color: white;">
+
+        <p><a class="pull-left" href="index.html"> <img class="brand" src="pics/brand.png"></a> <span>Settings for V2.0</span></p>
+
+        <br>
+        <div style="margin-left: 4%; margin-bottom: 10%;">
+          <h3 style="margin-top: 10%;"><i>Will you hear the story?...</i></h3>
+          <h4><i>Really? You will? I'm so happy...</i></h4>
+          <h4><i>or so you thought...</i></h4>
+          <br>
+          <br>
+          <h4 style="text-align: right;"> ...it happened so fast, that you just couldn't react.</h4>
+          <p style="font-family: times;">Once upon a time, you were a king...a cursed king. You were infamous and black luster among others, a real outcast. The sky - always blank and white, nothing had layed in store for you. You were, in a weird sense, alone and misunderstood.</p>
+          <br>
+          <h3 style="text-align: right;">Did you feel the madness building up on the inside? Some of them did. The cold and emptiness had forced you to leave home to go to a far away land.</h3>
+          <br>
+          <h4>You were a stranger in a strange realm. You only knew few of the locals, and still you were alone, with nothing, but your petty spells. Time would pass by and you would meet many kind and generous souls in the new kingdom, one which happened to be the queen of the land.</h4>
+          <br>
+          <h3>It was love at first sight...</h3>
+          <br>
+          <h3 style="text-align: right;">...the feeling of warmth whenever she stepped into the room, the constant agony of her clawing away at your heartstrings...</h3>
+          <br>
+          <h4>...was enough to keep you going, until you needed more. You ask for her hand and the both of you are happy...</h4>
+          <h4><i>or so you thought...</i></h4>
+        </div>
+        
+
+        </div>
+
+    </section>
+
+   <section id="about" class="pagedownwrap" style="margin-bottom: 100%; margin-top: 4%;">
+       
+        <div  id="background">
+
+        <p><a class="pull-left" href="index.html"> <img class="brand" src="pics/brand.png"></a> <span>Settings for V2.0</span></p>
+
+        <br>
+        <br>
+          <div>
+            <h1 id="title" >All About Us!</h1>
+
+            <p>There are many methods of contact for Requiem! Currently I'm all over the net, on facebook, twitter, even google plus!</p>
+          </div>
+          
+                  <div class="gambit">
+                                  <script type="text/javascript">
+                                   $(function() {
+
+                                      var $el = $( '#baraja-el' ),
+                                        baraja = $el.baraja();
+
+                                 $( '#nav-fanOther2' ).on( 'click', function( event ) {
+
+                                          baraja.fan( {
+                                            speed : 500,
+                                            easing : 'ease-out',
+                                            range : 360,
+                                            direction : 'left',
+                                            origin : { x : 50, y : 90 },
+                                            center : false
+                                          } );
+                                        
+                                        } );
+
+                                   // close the baraja
+                                        $( '#close' ).on( 'click', function( event ) {
+
+                                          baraja.close();
+                                        
+                                        } );
+
+                                 });
+
+                                   // example of how to add more items
+                                    $( '#add' ).on( 'click', function( event ) {
+
+                                      if( $( this ).hasClass( 'disabled' ) ) {
+                                        return false;
+                                      }
+
+                                      $( this ).addClass( 'disabled' );
+
+                                      baraja.add( $('<li><img src="pics/logo.png" alt="Cross of Drahcir"><h4>CoD</h4><p>The logo for which will bring forth change.</p></li><li><img src="pics/profiledrc.png" alt="Drahcir Aluerand"><h4>Drahcir</h4><p>Creator of Requiem in all of its glory.</p></li><li><img src="pics/aya1.png" alt="Ayate Requia Aluerand"><h4>Ayate</h4><p>The Mascot of Requiem</p></li><li><img src="pics/ann.png" alt="Anne Christine Thomas"><h4>Anne</h4><p>Requiem&rsquo;s retainer of Traditions.</p></li><li><img src="pics/cory.png" alt="Corynn Darkes"><h4>Corynn</h4><p>The Ghost of Requiem.</p></li>') );
+                                    
+                                    } );
+                                
+                                  </script>
+                                    <div style="margin-bottom: 4%;">
+                                     <button type="button" class="btn btn-default" id="nav-fanOther2">Meet Us!</button> <button type="button" class="btn btn-default" id="close">Dismiss</button> 
+                                    </div>
+
+                                    <ul id="baraja-el" class="baraja-container">
+
+                                      <li>
+                                      <img src="pics/about/drahcirii.png" alt="Drahcir II" style="width: 75%; ">
+                                      <h4>Drahcir II (Richard T.)</h4>
+                                      <p>I have various methods of contact and social media! Scroll through them all!</p>
+                                      </li>
+
+                                      <li>
+                                      <img src="pics/about/drcda.png" alt="Cross of Drahcir">
+                                      <h4>Deviant ART</h4>
+                                      <p>Want to see more of my work? <a href="drahcirii.deviantart.com"> Go here!</a></p>
+                                      </li>
+
+                                      <li>
+                                      <img src="pics/about/mail.png" alt="email">
+                                      <h4>Outlook</h4>
+                                      <p>Emailing me is a <a href="mailto:requiem_gfx@outlook.com">click</a> away!</a></p>
+                                      </li>
+
+                                      <li>
+                                      <img src="pics/about/quanne.png" alt="twitter">
+                                      <h4>Twitter</h4>
+                                      <p>Follow me on twitter @Drahcir_II!</p>
+                                      </li>
+
+                                      <li>
+                                      <img src="pics/about/gplus.png" alt="Google Plus">
+                                      <h4>Google Plus</h4>
+                                      <p>Check out<a href="plus.google.com/+drahcirii">+DrahcirII on G Plus!</a></p>
+                                      </li>
+
+                                      <li>
+                                      <img src="pics/about/facebook.png" alt="Facebook" style="width: 75%">
+                                      <h4>Facebook</h4>
+                                      <p>Check me out on facebook! Just go to <a href="facebook.com/drachirii">Drahcir-II</a>, The Lone Artist!</p>
+                                      </li>
+
+                                      <li>
+                                      <img src="pics/about/mystyle.png" alt="Blank">
+                                      <h4>Drahcir II</h4>
+                                      <p>lorem ipsum</p>
+                                      </li>
+
+                                       <li>
+                                      <img src="pics/logo.png" alt="Blank" style="filter: invert(180);">
+                                      <h4>Drahcir II</h4>
+                                      <p>lorem ipsum</p>
+                                      </li>
+
+                                    
+                                      
+                                    </ul>
+                                    <button type="button" class="btn btn-default"><span id="add">Cards?</span></button> 
+                                    
+                                 </div> 
+
+        </div>
+
+    </section>
+
+
+  <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top" style="padding-left: 20px; padding-right: 20px">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+               <a class="pull-left" href="index.html"> <img class="brand" src="pics/brand.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+          <!--Drop 1-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Art<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+               <li class="dropdown-header">Featured</li>
+                <li><a href="#">Characters and Worlds</a></li>
+                <li role="separator" class="divider"></li>               
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Traditional Styles</a></li>
+                <li><a href="#">Digital Method</a></li>               
+              </ul>
+            </li>
+            <!--Drop 2-->
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Literature<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Featured</li>
+                <li><a href="pages/lit/skingdom.html">September Kingdom</a></li>
+                <li role="separator" class="divider"></li>                
+                <li><a href="#">My Dark Best Friend</a></li>
+                <li><a href="#">Faction XI: Lynx</a></li>
+                <li><a href="#">Aurora Project</a></li>
+              </ul>
+            </li>
+            <!--Drop 3-->
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog+<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Requiem Special</li>
+                <li><a href="https://www.drcdarkwonderland.tumblr.com">Tumblr</a></li>
+                <li role="separator" class="divider"></li>             
+                <li><a href="https://drahcirii.deviantart.com">DeviantArt</a></li>
+                <li><a href="https://plus.google.com/+drahcirii">Google Plus</a></li>
+              </ul>
+            </li>
+        
+            
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                    <li><a href="#1">Drahcir-II</a></li>
+                    <li><a href="#3">Requiem G Project</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" data-toggle="modal" data-target="#contribute">Contributors</a></li>
+                    <li><a href="#" id="pagedown">Contact Info</a></li>
+                </ul>
+            </li> 
+            <li class="active"><a href="#" data-toggle="modal" data-target="#ayated">Ayaté 愛弥てー<span class="sr-only">(current)</span></a></li>
+
+
+          </ul>
+
+         <a href="#3" class="navbar-link" style="float: right; margin-top: 10px; color: #cc0000; font-family: Gothic;"><script src="js/quote.js"></script><span class="sr-only">(current)</span></a>
+
+        </div><!--/.nav-collapse -->
+   
+    </nav>
+    
+
+    
+    <section id="requiem">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+
+      <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000"> 
+
+                   <!-- Carousel indicators
+                   <ol class="carousel-indicators"> 
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
+                      <li data-target="#myCarousel" data-slide-to="1"></li> 
+                      <li data-target="#myCarousel" data-slide-to="2"></li> 
+                   </ol>    
+                    --> 
+                   <div class="carousel-inner"> 
+
+                      <div class="item active">
+                         <h1 id="title">The Underground!</h1>
+                         <br>
+                         <p id="sub-section">Behold the dark wonderland of Drahcir II! A place of art, design, and wonder for those who dare to step onto the other side!</p>
+                      </div> 
+
+                      <div class="item"> 
+                         <h1 id="title">The Mind of Drahcir II</h1>
+                         <br>
+                        <p id="sub-section" >Prepare for a journey through vast worlds and rich characters on the ride through galaxies and real world realms. Strap in and go!</p>
+                      </div>
+                        
+                      <div class="item"> 
+                         <h1 id="title">Change Your World</h1>
+                         <br>
+                         <p id="sub-section"> <a href="#" data-toggle="tooltip" data-placement="top" title="Conform 2- to be obedient or compliant -esp- to adapt oneself to prevailing standards or customs.">Conformity</a> is not in our vocabulary, let the creativity flow! Read more of the Requiem Project today!</p>
+                      </div> 
+
+                       <!-- Modal --> 
+                        <div class="modal fade" id="ayated" tabindex="-1" role="dialog"  
+                           aria-labelledby="myModalLabel" aria-hidden="true"> 
+                           <div class="modal-dialog"> 
+                         <div class="modal-content"> 
+                                 <div class="modal-header"> 
+                                    <button type="button" class="close"  
+                                       data-dismiss="modal" aria-hidden="true"> 
+                                          &times; 
+                                    </button> 
+                                    <h4 class="modal-title" id="myModalLabel"> 
+                                       <p id="sub-section" style="font-size: 1.5em; color: #cc0000;">Wisdom of Ayaté!</p>
+                                    </h4> 
+                                 </div> 
+                                 <div class="modal-body" style="color: red; text-align: center;"> 
+                                       <!-- Random Text Generator -->
+                                      <script src="js/randomizer.js"></script>                                   
+                                     
+                                      <script>var poemstuff = [
+                                          '<img id="robot" style="height: 75%; width: 75%; margin: 0 auto; display: block;" src="pics/aya1.png">',
+                                          '<img id="robot" style="height: 75%; width: 75%; margin: 0 auto; display: block;" src="pics/aya2.png">',
+                                          '<img id="robot" style="height: 75%; width: 75%; margin: 0 auto; display: block;" src="pics/ann.png">',       
+                                              ];
+                                              var poemLineNumber = Math.random() * (poemstuff.length - 1);
+                                              poemLineNumber = poemLineNumber.toFixed(0);
+                                              document.write(poemstuff[poemLineNumber]);
+                                      </script>
+
+
+                                      <a href="#"><p style="text-align: right; font-style: italic; font-size: 1em; color: #ff0000;" data-toggle="modal" data-target="#preview"> Click to see my full form!</p></a>
+                                 </div> 
+                                 <div class="modal-footer"> 
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">  
+                                     Rock On!
+                                    </button> 
+                                 </div> 
+                              </div><!-- /.modal-content --> 
+                        </div><!-- /.modal -->
+                        </div>
+
+                      
+                   </div>
+
+
+                </div>
+                   <!-- Carousel nav --> 
+                  
+
+      </div>
+
+    </div>
+
+
+    <section id="0" style="margin-bottom: 7%; margin-top: 7%;">
+      <!-- Example row of columns -->
+      <div class="row" id="tabbed" style="color: white; width: 80%; margin: 0 auto;">
+
+       <div class="col-md-4">
+          <h2><span id="subtitle">Design</span></h2>
+           <p>Digital creations and renderings drive Req's engines and keeps the style flowing! From skins to edits, many ideas roll off of the shelf and are cooked right here.  </p>
+             <br><br>
+          
+
+        </div>
+
+      <div class="col-md-4" style="">
+          <h2> <span id="subtitle">Art</span></h2>
+           <p>From the deviant, Drahcir II, view works of progress over three years in the making, and experience the wonderland. <a href="index.html">Requiem</a> is the future of an art movement concieved back as far as 2009. Join the underground world of Requiem! </p>
+          
+        </div>
+       
+        <div class="col-md-4">
+          <h2><span id="subtitle">Change</span></h2>
+           <p>At <a href="index.html">Requiem</a>, there are paragraphs of stories expanding from the future to fantasy worlds at the edge of reality. Meet characters such as Anne, Luster, Angel, Nj, and Req's very own mascot, <a href="#">Ayate!</a> </p>
+           <br>
+          
+       </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+
+      <!--About-->
+
+       <section id="1">
+             <div id="imagecap" style=" display: block; margin: 0 auto; box-shadow:12px rgba(255,0,0, 0.5);  position: relative; ">
+              <a href="#2"> <img  id="dropdown" src="pics/cover.png" style="display: block; margin: 0 auto;width: 80%; height: 80%; border-top-left-radius: 10px;border-top-right-radius: 10px;" ></a>
+              </div>
+            </section>
+
+            
+                
+                  <section id="2" class="dropdownwrap">
+                        <div id="aboutme" style="padding: 60px; font-size: 1em; border-left: solid 5px; border-color: darkred;">                       
+                            
+                            <p style="text-align: center;">Hello everyone^^ I know it's a slight mouthfull, but I'm pretty much on a username basis, so you can call me <span id="emphasis" >DRC</span> for short ^_~.</p>
+                              <br> 
+                              <p style="text-align: center;">It is pretty fair that I tell a little more about myself, so...</p>
+                              <br>
+                                <div id="about" style="text-align: left;">
+                                  <p><span id="emphasis">I really love art ^_^! I'd kinda die without it...X_X</span></p>
+                                  <p>I also love Anime and Manga^^ (but I watch only the most advertised stuffs! I'm a fan of <span id="emphasis">Eureka 7</span> and <span id="emphasis"> Death Note >:3</span>)</p>
+                                  <p>My real name is Richard (yeah....cue the roses and short gust of wind behind my cape...)</p>
+                                  <p>My favorite two foods are rice and pizza (weird, I know... like some sheltered teenager er something... ¬_¬)!</p>
+                                  <p>I draw almost <span id="emphasis">anything</span> that is asked of me, especially if asked by a close friend</p>
+                                  <p>I do art of various types and some photography (I deal in working with pencils and/or software to make my pictures)</p>
+                                  <p>I hope to get to practice more</p>
+                                  <p>Me and my laptop are like married with how much I work with it <span id="emphasis">&lt;3 &lt;3 &lt;3!</span></p>
+                                  <p>I'm overactive when using <span id="emphasis">emoticons</span>...pshhh I love those things ;]</p>
+                                  <p>I enjoy web design almost as much as I love art!</p>
+
+                                  <h2 id="emphasis" style="font-family: Gothic;">...And Now...</h2>
+                                    <br>
+                                
+                                </div>                         
+
+                          </div>
+                    </section>
+                              
+
+                  <section id="3">
+                  <div id="background">
+                    <div id="wrapper" style="margin: 12%;">
+                    <h1 id="title" style="text-align: center; color: #fff;" >The Requiem Project</h1>
+                       
+                          <p id="statment" style="padding: 60px 60px 0px 60px;  margin-bottom: 3%; font-size: 1.3em; text-indent: 1.5em; text-align: left;">
+                            <span id="emphasis" style="font-family: mirage; font-size: 1.3em;">Requiem</span> is a concept concieved as a site to promote <b id="emphasis">creativity</b> and <b id="emphasis">free will</b> to the public. The idea is to <span id="emphasis">add change to a society of the few</span> by not only <span id="emphasis">augmenting</span> the <i>thinking</i> of the individual, but by encouraging the spread of ideas. The mission as a group of <span id="emphasis">free thinkers</span> that sail the international waters of the net, is finding the true meaning of <span id="emphasis">freedom through design and self-expression</span>. We <i id="emphasis">liberate</i> thus burying old traditions and norms to usher forth a <i id="emphasis">new generation</i>. <br>
+                         <br> 
+                             P.S. Feel free to go on to <a href="drahcirii.deviantart.com/gallery">DeviantArt</a> to check out my gallery^^! My art won't bite... well maybe. <span id="emphasis">Peace♫!</span>
+                          </p>
+
+                          </div>
+
+                       </div>
+                                 
+                    </section>
+                    
+          
+            
+
+
+                    <!-- Modal --> 
+                        <div class="modal fade" id="preview" tabindex="-1" role="dialog"  
+                           aria-labelledby="myModalLabel" aria-hidden="true"> 
+                           <div class="modal-dialog"> 
+                         <div class="modal-content"> 
+                                 <div class="modal-header"> 
+                                    <button type="button" class="close"  
+                                       data-dismiss="modal" aria-hidden="true"> 
+                                          &times; 
+                                    </button> 
+                                    <h4 class="modal-title" id="myModalLabel"> 
+                                       <p id="sub-section" style="font-size: 1.5em; color: darkred;">About</p>
+                                    </h4> 
+                                 </div> 
+                                 <div class="modal-body" style="color: red;"> 
+                                    
+                                      <img id="robot" style="height: 100%; width: 100%; margin: 0 auto; display: block; text-align: center;" src="pics/ayate.png">
+                                      <aside style="text-align: right;"><p>Ayate Powered Up at 200%, by <span id="emphasis"><i>Drahcir II</i></span></p></aside>
+                                   
+
+                                 </div> 
+                                 <div class="modal-footer"> 
+                                    <button type="button" class="btn btn-default" data-dismiss="modal"> 
+                                     Rock On!
+                                    </button> 
+                                 </div> 
+                              </div><!-- /.modal-content --> 
+                        </div><!-- /.modal -->
+                      </div>
+
+                         <!-- Modal --> 
+                        <div class="modal fade" id="contribute" tabindex="-1" role="dialog"  
+                           aria-labelledby="myModalLabel" aria-hidden="true"> 
+                           <div class="modal-dialog"> 
+                         <div class="modal-content"> 
+                                 <div class="modal-header"> 
+                                    <button type="button" class="close"  
+                                       data-dismiss="modal" aria-hidden="true"> 
+                                          &times; 
+                                    </button> 
+                                    <h4 class="modal-title" id="myModalLabel"> 
+                                       <p id="sub-section" style="font-size: 1.5em; color: #cc0000;">Site Contributors</p>
+                                    </h4> 
+                                 </div> 
+                                 <div class="modal-body" style="color: white;"> 
+
+
+                                                 <h2 id="subtitle">Chief Designer</h2>
+                                                   
+                                                   <hr>
+                                                     <h3 class="state" >Drahcir-II - <a href="mailto:drahcirii@outlook.com">DrahcirII@Outlook.com </a></h3>
+                                                     <br>
+
+                                                 <h2 id="subtitle" >Partners and Supporters</h2>
+                                                   <hr>
+                                                     <h3 class="state" >Tra'Von H.</h3>
+                                                     <h3 class="state" >Carlos B.</h3>
+                                                     <br>
+
+                                                 
+                                                 <h2 id="subtitle" >Special Thanks</h2>
+                                                   <hr>
+                                                     <h3 class="state" >James York from Grand Circus</h3>
+                                                     <h3 class="state" >Teachers and members of Grand Circus - Coding and Web Design Academy</h3>
+                                                     <h3 class="state" >Mr. Green, the Graphic Design teacher at Central Collegiate</h3>
+                                                     <h3 class="state" >My top watchers on DeviantArt from which I get constant support in my efforts</h3>
+                                                     <h3 class="state" >My good friend Jerome for coining the phrase "Get Wrecked" ^0^!</h3>
+                                                     <h3 class="state" >"Sensei" Melissa S. for opening my eyes to the vast world of art and...</h3>
+                                                     <br>
+                                                     <h3 class="state" ><span id="emphasis">Very special thanks to my old friend Bailey, for without her, I would have never had the inspiration I needed to get my art to where it is today♫</span></h3>
+
+                                                 <br>
+                                                 <br>
+                                                 <h3 class="title" style="font-family:">Lay the norm to rest, play a requiem, and join the future.</h4>
+ 
+                                          
+                                 </div> 
+                                 <div class="modal-footer"> 
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">  
+                                     Rock On!
+                                    </button> 
+                                 </div> 
+                              </div><!-- /.modal-content --> 
+                        </div><!-- /.modal -->
+                        </div>
+
+                    
+                      
+                    
+                           
+           
+      <div style="width: 80%; margin: 0 auto; display: block;">
+      <hr>
+
+      <footer style="font-family: gothic;">
+        <h5> 2016 Requiem Underground and Co. <span style="font-size: 0.7em;">2013-2016 Drahcir-II.</span><h6>Artwork protected by Creative Commons. Commercial use is prohibited.</h6></h5> 
+      </footer>
+    </div> <!-- /container -->
+
+     <style type="text/css">
+
+
+   
+              h1.title{
+                text-align: center;
+              }
+              #aboutme{
+                  padding: 10px;
+                  background-repeat: repeat-y;
+                  background-size: cover;
+                  margin: 0 auto;
+                  width: 80%;
+                  background-color: #111111;
+                  
+
+
+              }
+
+               #background{
+                  padding: 10px;
+                  background-repeat: repeat-y;
+                  background-size: cover;
+                  margin: 0 auto;
+                  width: 80%;
+                  border-bottom-left-radius: 10px;
+                  border-bottom-right-radius: 10px;
+                  background-color: #111111;
+
+              }
+              #statement{
+                width: 50%; 
+                height: 50%; 
+                margin: 0 auto;
+              }
+
+              #cod{
+                   width: 40%; 
+                height: 40%; 
+                padding-bottom: 5%;
+                margin: 0 auto;
+                text-align: center;
+                display: block;
+                
+              }
+                
+          .jumbotron{
+                background-image: url("pics/moon.png");                
+                background-size: cover;
+                background-repeat: repeat-x;
+                background-position: center;
+                
+                }
+
+                .state{
+                  font-size: 1.2em;
+                }
+
+                #title{
+                  color: white;
+                }
+
+                #robottalk{
+                  
+                }
+                
+                #sub-section{
+                  color: white;
+                }
+
+              
+
+             </style>
+
+             <script> 
+               $(function () { $('#preview').on('hide.bs.modal', function () { 
+                  alert('Be sure to check out my DeviantArt page for more great art!');}) 
+               }); 
+            </script>  
+
+            <script type="text/javascript">
+              var easter_egg = new Konami();
+              easter_egg.code = function() { $('.konamiwrap').slideToggle()
+ ;}
+              easter_egg.load()
+            </script>
+
+            
+      
+
+<script type="text/javascript">(function () {
+        return window.SIG_EXT = {};
+      })()</script>
+
+  </body>
+
+</html>

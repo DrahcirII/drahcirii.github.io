@@ -1,0 +1,195 @@
+
+@font-face{
+	font-family: 'Gothic';
+	src: url(../fonts/gothic.ttf);
+}
+
+
+
+@font-face{
+	font-family: 'Mirage';	
+	src: url(../fonts/mirage.ttf);	
+}
+
+@font-face{
+	font-family: 'Dampfplatz';	
+	src: url(../fonts/dampfplatz.ttf);	
+}
+
+
+@font-face{
+	font-family: "pixeltype"; 
+	src: url(../fonts/pixeltype.ttf);
+}
+
+
+a:link{
+	 color: #ff8e8e;
+   cursor: url('../pics/cursorl.png'), default;
+}
+
+a:hover{
+	color:;
+}
+
+a:visited{
+	color: #ff0000;
+}
+
+.btn{
+	font-family: "Gothic";
+}
+
+
+body{
+	background-color: #000000;
+	background-image: url("../pics/reqcheck.png");
+	background-attachment: fixed;
+	background-repeat: repeat-y repeat-x;
+	cursor: url('../pics/cursor.png'), default;
+	font-family: "Gothic";
+	
+}
+
+#white{
+	color: white;
+}
+
+#robottalk{
+	 font-family: 'pixeltype';
+	 font-size: 2em;
+
+
+}
+
+#title{
+	font-family: 'Dampfplatz';
+	
+}
+
+#subtitle{
+	font-family: 'Mirage';
+}
+
+#sub-section{
+	font-family: 'Gothic';
+	font-size: 1.5em;
+}
+
+
+
+p{
+	color: #ffffff;
+	font-family: 'Gothic';
+}
+
+li{
+	color: #ffffff;
+	font-family: 'Gothic';	
+}
+
+ol{
+	color: #ffffff;
+	font-family: 'Gothic';	
+}
+
+hr{
+	border-color: red;
+	 -webkit-box-shadow: 0 3px 9px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 3px 3px rgba(255, 0, 0, 0.7);
+}
+
+#emphasis{
+	color: #ff8e8e;
+}
+
+#background{
+	background-image: url("../pics/bg.png");
+	background-attachment: scroll;
+	background-repeat: repeat-y;
+	font-family: 'Gothic';
+}
+
+#darken{
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 5px;
+	border: solid 1px;
+	 color: #333333;
+}
+
+
+footer{
+	color: #ffffff;
+	font-family: 'Gothic';	
+}
+
+#tabbed{
+	border-left: solid 5px;
+	border-color: darkred;
+	
+}
+
+.topmessage{
+	color: red;
+}
+
+.dropdown{
+	font-family: 'Gothic';
+}
+.dropdown-menu{
+	font-family: 'Gothic';
+	border: solid 1px rgb(62,62,62);
+
+}
+
+.modal-content {
+    position: relative;
+    background-color: #000000;
+    border: 1px solid #ff0000;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(255, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+
+footer{
+	color: #ffffff;
+	font-family: 'Baskerville';
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+/*Loader Code*/
+
+
+/* Dropdown Controls 
+http://www.derby-web-design-agency.co.uk/blog-post/how-to-create-a-jquery-slidedown-toggle-effect-div-tutorial/22/
+
+*/
+
+ 
+.dropdownwrap{
+
+    display:none;
+
+}
+ 
+.pagedownwrap{
+
+    display:none;
+
+}
+
+.konamiwrap{
+
+    display:none;
+
+}

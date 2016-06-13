@@ -1,0 +1,43 @@
+ var poemstuff = [
+
+          '<h4 id="robottalk" class="topmessage"><i>8:3 "His skin was dark and as for his body, he didn&#8217t have a very tough build. The boy&#8217s hair was silver and his eyes were as yellow as the sun, but cold and steely. He was limp and there was a very present sadness on his face, though he was pretty much…blank." - From "Sepember Kingdom - The Requiem of Queen Bella" </i></h4>',                    
+          '<h4 id="robottalk" class="topmessage">Did you sleep well?</h4>',
+           '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage">A page of the purest beauty and elegance&hellip;</h4>',
+          '<h4 id="robottalk" class="topmessage"> Now with 100% less <b>calories</b> than your daily recommended internet dosage!</h4>',
+          '<h4 id="robottalk" class="topmessage">Hey, you! Yeah, you with the keyboard! Whatcha doin?</h4>',
+           '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage"><i>1:1 "The sky is gold, much like the flowers surrounding the atmosphere as I stare out of my hotel room window. I have traveled a long way to begin my long awaited dream. Call me a "gutter" oriented man, but I do have standards…" - From "Rose Gardens-The Rose Gardens and Company Inc."</i></h4>',
+          '<h4 id="robottalk" class="topmessage">A rose for my dear visitor&hellip; you are here to <b>browse</b> this page right?</h4>',
+          '<h4 id="robottalk" class="topmessage">I know a secret! Wanna hear it?</h4>',
+          '<h4 id="robottalk" class="topmessage"><i>1:1 "I was on a train headed for the outskirts. The sun beamed through cracks in the ground above, lighting up the cave we rode through. I looked down and saw the blackness below. The cave was vast and the tracks were supported by one long beam stretching from Grand Hall to Outpost Number One. The car I sat in was dimly lit and the train was packed with people; they all were looking at me and whispering to their partners." From - "Not A Single Word" </i></h4>',
+          '<h4 id="robottalk" class="topmessage">Love ya, Bella!</h4>',
+           '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage">A page of the purest beauty and elegance&hellip;</h4>',
+          '<h4 id="robottalk" class="topmessage">Random words at the top of the screen, oh my!</h4>',
+           '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage">Click me and you&#8217ll still have to read my words off of the screen!</h4>',
+          '<h4 id="robottalk" class="topmessage"><i>19:1 "What a fine time to have a blackout… One of my men gave you a shot that should give you a boost for a while. Our enemy is still attacking and you probably already know this by now, but you are right in the middle of a war." - From "Faction XI-The Members of Lynx"</i></h4>',
+          '<h4 id="robottalk" class="topmessage">I am the Grim Reaper, here to scroll this page!</h4>',
+           '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage">A page of the purest beauty and elegance&hellip;</h4>',
+          '<h4 id="robottalk" class="topmessage">What? My creator put me here to annoy you and talk to you as if I&#8217m real! I&#8217m just a bunch of coded letters for christ&#8217s sake!</h4>',
+          '<h4 id="robottalk" class="topmessage">Check out the contributors section for info about why I was coded to display annoying messages up here at the top of the screen!</h4>',
+          '<h4 id="robottalk" class="topmessage">Hello world! I&#8217m ready for my closeup</h4>',
+           '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage">Refresh Me!</h4>',
+           '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage"><i>3:3 "I hold my knife in my hands and I walk slowly towards the man who is now holding his wife in a failed attempt to protect her. He holds tighter as I put my hand on his wife&#8217s forehead. My mind clears and I consult with myself to decide what to do next." - From "The Tortured Life of Angel The Killer"</i></h4>',
+          '<h4 id="robottalk" class="topmessage">A page of the purest beauty and elegance&hellip;</h4>',
+          '<h4 id="robottalk" class="topmessage">Hello, I&rsquo;m your conscience, please stay for tea!</h4>',
+          '<h4 id="robottalk" class="topmessage">Love ya, Bella!</h4>',
+          '<h4 id="robottalk" class="topmessage">and amidst the dark ruins of the castle, the king spoke his final edict &quot;Burn everything to the ground&hellip;&quot;</h4>',
+          '<h4 id="robottalk" class="topmessage">Follow me into the absence of day, into a dark wonderland&hellip;</h4>',
+          '<h4 id="robottalk" class="topmessage">Hey! Quit staring at my code!</h4>',
+          '<h4 id="robottalk" class="topmessage">Requiem G - Initialized, A-Part START.</h4>',
+          '<h4 id="robottalk" class="topmessage">Hello, the webmaster put this code here to annoy you :D!</h4>',
+
+              ];
+              var poemLineNumber = Math.random() * (poemstuff.length - 1);
+              poemLineNumber = poemLineNumber.toFixed(0);
+              document.write(poemstuff[poemLineNumber]);
