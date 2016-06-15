@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'Mirage';
-    src: url(../fonts/mirage.ttf);
+    font-family: 'Grutch';
+    src: url(../fonts/grutchshaded.ttf);
 }
 
 @font-face {
@@ -16,8 +16,8 @@
 }
 
 @font-face {
-    font-family: "pixeltype";
-    src: url(../fonts/pixeltype.ttf);
+    font-family: "Easta";
+    src: url(../fonts/pf_easta_seven.ttf);
 }
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -48,15 +48,30 @@ a:visited {
     background-color: red;
 }
 
+.navbar{
+    margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: #b7b7b7;
+  border-color: #e7e7e7;
+}
+
+img.brand{
+    width: 75%;
+    height: 75%;
+}
+
 #requiem-main {
     background-color: #000;
     background-image: url(../pics/reqcheck.png);
     background-attachment: fixed;
-    background-repeat: repeat-y repeat-x;
+    background-repeat: repeat-x repeat-y;
     cursor: url(../pics/cursor.png),default;
     font-family: "Gothic";
     position: absolute;
     width: 100%;
+
 }
 
 #requiem-mobile {
@@ -68,6 +83,23 @@ a:visited {
     font-family: "Gothic";
     position: absolute;
     width: 100%;
+    height: 100%;
+}
+
+#bella {
+    background-color: #fff;
+    background-image: url(../pics/reqcheckmb.png);
+    background-attachment: fixed;
+    background-repeat: repeat-y repeat-x;
+    cursor: url(../pics/cursor.png),default;
+    font-family: "Gothic";
+    width: 100%;
+    position: relative;
+    margin-bottom: 700%; 
+    border-left: 2%; 
+    border-bottom: 2%; 
+    border-right: 2%;
+   
 }
 
 #white {
@@ -75,17 +107,23 @@ a:visited {
 }
 
 #robottalk {
-    font-family: 'pixeltype';
-    font-size: 1.5em;
+    font-family: 'Easta';
+    font-size: 0.9em;
 }
 
 #title {
-    font-family: 'Dampfplatz';
+    font-family: 'Grutch';
     font-size: 3em;
 }
 
+#title-mobile {
+    font-family: 'Dampfplatz';
+    font-size: 2em;
+
+}
+
 #subtitle {
-    font-family: 'Mirage';
+    font-family: 'Grutch';
     font-size: 2em;
 }
 
@@ -108,11 +146,7 @@ ol {
     font-family: 'Gothic';
 }
 
-hr {
-    border-color: red;
-    -webkit-box-shadow: 0 3px 9px rgba(255,0,0,0.3);
-    box-shadow: 0 3px 3px rgba(255,0,0,0.7);
-}
+
 
 #emphasis {
     color: #ff8e8e;
@@ -183,13 +217,32 @@ footer {
 @media screen and (max-width: 640px) {
     #requiem-main {
         display: none;
+
     }
+
+    #bella{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 948px) {
+    #navmail {
+        display: none;
+
+    }
+
+    
+
 }
 
 @media screen and (min-width: 640px) {
     #requiem-mobile {
         display: none;
     }
+}
+
+.remove{
+	display: none;
 }
 
 /*Loader Code*/
@@ -208,3 +261,4 @@ http://www.derby-web-design-agency.co.uk/blog-post/how-to-create-a-jquery-slided
 .konamiwrap {
     display: none;
 }
+
