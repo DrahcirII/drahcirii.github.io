@@ -55,7 +55,7 @@
     </title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#reqtracker">
 
         <div class="loader">
         </div>
@@ -68,7 +68,7 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background: url('pics/gear.gif') 50% 50% no-repeat rgb(249,249,249);
+        background: url('pics/gear.gif') 50% 50% no-repeat rgb(0,0,0);
         }
 
 
@@ -305,21 +305,91 @@
         <section class="pagedownwrap" id="about" style=
         "margin-bottom: 100%; margin-top: 4%;">
             <div id="background">
-                <p><a class="pull-left" href="index.html"><img class="brand"
-                src="pics/brand.png"></a> <span>Settings for V2.0</span></p>
+                <a class="pull-left" href="index.html" id="sub-section" style="color: white;"><img class="brand"
+                src="pics/brand.png">V2.2</a> 
                 <br>
                 <br>
 
 
-                <div>
-                    <h1 id="title" style="margin-top: 3%;">All About Us!</h1>
+                <div style="width: 80%; margin-left: auto; margin-right: auto; margin-top: 8%;">
+                    <h1 id="title" style=" text-align: center; ">The Devious Developer!</h1>
 
 
-                    <p>There are many methods of contact for Requiem! Currently
+                    <p style="text-align: center;">There are many methods of contact for Requiem! Currently
                     I'm all over the net, on facebook, twitter, even google
                     plus!</p>
+
+                    <img src="pics/developer.png" class="img-responsive" style="margin: 2% auto; display: block; ">
+
+                    <div id="aboutme" style=
+                        "padding: 60px; font-size: 1em; ">
+                        <p style="text-align: center;">Hello everyone^^ I know it's a
+                        slight mouthfull, but I'm pretty much on a username basis, so you
+                        can call me <span id="emphasis">DRC</span> for short ^_~.</p>
+                            <br>
+
+
+                            <p style="text-align: center;">It is pretty fair that I tell a
+                            little more about myself, so...</p>
+                            <br>
+
+
+                            <div id="about" style="text-align: left;">
+                                <p><span id="emphasis">I really love art ^_^! I'd kinda die
+                                without it...X_X</span>
+                                </p>
+
+
+                                <p>I also love Anime and Manga^^ (but I watch only the most
+                                advertised stuffs! I'm a fan of <span id="emphasis">Eureka
+                                7</span> and <span id="emphasis">Death Note
+                                &gt;:3</span>)</p>
+
+
+                                <p>My real name is Richard (yeah....cue the roses and short
+                                gust of wind behind my cape...)</p>
+
+
+                                <p>My favorite two foods are rice and pizza (weird, I
+                                know... like some sheltered teenager er something...
+                                ¬_¬)!</p>
+
+
+                                <p>I draw almost <span id="emphasis">anything</span> that
+                                is asked of me, especially if asked by a close friend</p>
+
+
+                                <p>I do art of various types and some photography (I deal
+                                in working with pencils and/or software to make my
+                                pictures)</p>
+
+
+                                <p>I hope to get to practice more</p>
+
+
+                                <p>Me and my laptop are like married with how much I work
+                                with it <span id="emphasis">&lt;3 &lt;3 &lt;3!</span></p>
+
+
+                                <p>I'm overactive when using <span id=
+                                "emphasis">emoticons</span>...pshhh I love those things
+                                ;]</p>
+
+
+                                <p>I enjoy web design almost as much as I love art!</p>
+
+
+                                <h2 id="emphasis" style="font-family: Gothic;">...And
+                                Now...</h2>
+                                <br>
+                            </div>
+                        </div>
+
+                    <p>Requiem began as my second ever webpage project! So far I've been practicing more advanced code and I plan to take this site very far. I was born in Lansing, MI and I reside in the grand old Motor City. Some time ago I took classes at Grand Circus Co. to polish my web design skills and now I'm an indie developer who seeks to find cool ways to make mysterious and dark style websites. Requiem is going to be my future design company website so hopefully you'll see more of me. Click through the cards below to find out more!</p>
+
                 </div>
 
+                
 
                 <div class="gambit">
                     <script type="text/javascript">
@@ -365,7 +435,7 @@
                                 
                     </script>
 
-                    <div style="margin-bottom: 4%;">
+                    <div style="margin-bottom: 4%; display: none;">
                         <button class="btn btn-default" id="nav-fanOther2"
                         type="button">Meet Us!</button> <button class=
                         "btn btn-default" id="close" type=
@@ -669,21 +739,18 @@
 
 
                                 <p id="sub-section">Behold the dark wonderland
-                                of Drahcir II! A place of art, design, and
+                                of <span id="emphasis">Requiem Underground</span>! A place of art, design, and
                                 wonder for those who dare to step onto the
                                 other side!</p>
                             </div>
 
 
                             <div class="item">
-                                <h1 id="title">The Mind of Drahcir II</h1>
+                                <h1 id="title">Access to Resources</h1>
                                 <br>
 
 
-                                <p id="sub-section">Prepare for a journey
-                                through vast worlds and rich characters on the
-                                ride through galaxies and real world realms.
-                                Strap in and go!</p>
+                                <p id="sub-section">Here, we provide many customization options for style savvy developers!</p>
                             </div>
 
 
@@ -692,11 +759,9 @@
                                 <br>
 
 
-                                <p id="sub-section"><a data-placement="top"
-                                data-toggle="tooltip" href="#" title=
-                                "Conform 2- to be obedient or compliant -esp- to adapt oneself to prevailing standards or customs.">
-                                Conformity</a> is not in our vocabulary, let
-                                the creativity flow! Read more of the Requiem
+                                <p id="sub-section">
+                                <span id="emphasis">Normal</span> is not in our vocabulary; let
+                                your creativity flow! Read more of the Requiem
                                 Project today!</p>
                             </div>
 
@@ -818,107 +883,61 @@
             "display: block; margin: 0 auto;width: 80%; height: 80%; border-top-left-radius: 10px;border-top-right-radius: 10px;"></a>
             </div>
         </section>
+        
+
+                <section class="dropdownwrap" id="2" >
+                    <div id="background" style="border-left: solid 5px;">
+                        <div id="wrapper" style="margin: 12%;">
+                            <h1 id="title" style="text-align: center; color: #fff;">The
+                            Requiem Project</h1>
 
 
-        <section class="dropdownwrap" id="2">
-            <div id="aboutme" style=
-            "padding: 60px; font-size: 1em; border-left: solid 5px; border-color: darkred;">
-            <p style="text-align: center;">Hello everyone^^ I know it's a
-            slight mouthfull, but I'm pretty much on a username basis, so you
-            can call me <span id="emphasis">DRC</span> for short ^_~.</p>
-                <br>
+                            <p id="statment" style="padding: 60px 60px 0px 60px; margin-bottom: 3%; font-size: 1.3em; text-indent: 1.5em; text-align: left; line-height: 1.8em;">
+                            <span id="emphasis" style=
+                            "font-family: mirage; font-size: 1.3em;">Requiem</span> is
+                            a concept concieved as a site to promote <b id=
+                            "emphasis">creativity</b> and <b id="emphasis">free
+                            will</b> to the public. The idea is to <span id=
+                            "emphasis">add change to a society of the few</span> by not
+                            only <span id="emphasis">augmenting</span> the
+                            <i>thinking</i> of the individual, but by encouraging the
+                            spread of ideas. The mission as a group of <span id=
+                            "emphasis">free thinkers</span> that sail the international
+                            waters of the net, is finding the true meaning of <span id=
+                            "emphasis">freedom through design and
+                            self-expression</span>. We <i id="emphasis">liberate</i>
+                            thus burying old traditions and norms to usher forth a
+                            <i id="emphasis">new generation</i>.<br>
+                            <br>
+                            P.S. Feel free to go on to <a href=
+                            "drahcirii.deviantart.com/gallery">DeviantArt</a> to check
+                            out my gallery^^! My art won't bite... well maybe.
+                            <span id="emphasis">Peace♫!</span></p>
+                        </div>
+                    </div>
+                </section>
 
+        <section id="3" style="margin-bottom: 7%;">
+            <div id="background" style="border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
+                <div id="services" style="margin: 0 auto; display: block; width: 80%; text-align: left; padding: 10px;">
+                    <h1 id="title" style="text-align: center;"">Services to be Rendered</h1>
+                        <ul style=" margin-top: 5%;">
+                            <li>Custom Webpage Design</li>
+                            <li>Prints</li>
+                            <li> Business Cards</li>
+                            <li>Custom Graphics</li>
+                            <li>Apparel <span class="badge">Not in Development</span></li>
+                            <li>Custom Accesories <span class="badge">Not in Development</span></li>
+                        </ul>
 
-                <p style="text-align: center;">It is pretty fair that I tell a
-                little more about myself, so...</p>
-                <br>
-
-
-                <div id="about" style="text-align: left;">
-                    <p><span id="emphasis">I really love art ^_^! I'd kinda die
-                    without it...X_X</span>
-                    </p>
-
-
-                    <p>I also love Anime and Manga^^ (but I watch only the most
-                    advertised stuffs! I'm a fan of <span id="emphasis">Eureka
-                    7</span> and <span id="emphasis">Death Note
-                    &gt;:3</span>)</p>
-
-
-                    <p>My real name is Richard (yeah....cue the roses and short
-                    gust of wind behind my cape...)</p>
-
-
-                    <p>My favorite two foods are rice and pizza (weird, I
-                    know... like some sheltered teenager er something...
-                    ¬_¬)!</p>
-
-
-                    <p>I draw almost <span id="emphasis">anything</span> that
-                    is asked of me, especially if asked by a close friend</p>
-
-
-                    <p>I do art of various types and some photography (I deal
-                    in working with pencils and/or software to make my
-                    pictures)</p>
-
-
-                    <p>I hope to get to practice more</p>
-
-
-                    <p>Me and my laptop are like married with how much I work
-                    with it <span id="emphasis">&lt;3 &lt;3 &lt;3!</span></p>
-
-
-                    <p>I'm overactive when using <span id=
-                    "emphasis">emoticons</span>...pshhh I love those things
-                    ;]</p>
-
-
-                    <p>I enjoy web design almost as much as I love art!</p>
-
-
-                    <h2 id="emphasis" style="font-family: Gothic;">...And
-                    Now...</h2>
-                    <br>
+                        <p style="margin-top: 5%;>With a bigger fanbase and a basic business model, Requiem will be able to spread it's design influence among a wider area and become a design staple of the net. Future projects such as <span id="emphasis">Requiem Social</span>, a cross between <span style="color: #bbbbff;">Twitter</span>, <span style="color: #0000ff;"> MySpace</span>, and <span style="color: #00cc00;">DeviantART</span>, will allow users to have a sleek and social hangout to post about the things that matter most in their lives! For the plan, Requiem intends to be the future face of design, and style. Want to contribute? Be sure to contact my e-mail to see how you can help ^_^ ciao!</p>
+                 
                 </div>
             </div>
         </section>
 
 
-        <section id="3">
-            <div id="background">
-                <div id="wrapper" style="margin: 12%;">
-                    <h1 id="title" style="text-align: center; color: #fff;">The
-                    Requiem Project</h1>
-
-
-                    <p id="statment" style=
-                    "padding: 60px 60px 0px 60px; margin-bottom: 3%; font-size: 1.3em; text-indent: 1.5em; text-align: left;">
-                    <span id="emphasis" style=
-                    "font-family: mirage; font-size: 1.3em;">Requiem</span> is
-                    a concept concieved as a site to promote <b id=
-                    "emphasis">creativity</b> and <b id="emphasis">free
-                    will</b> to the public. The idea is to <span id=
-                    "emphasis">add change to a society of the few</span> by not
-                    only <span id="emphasis">augmenting</span> the
-                    <i>thinking</i> of the individual, but by encouraging the
-                    spread of ideas. The mission as a group of <span id=
-                    "emphasis">free thinkers</span> that sail the international
-                    waters of the net, is finding the true meaning of <span id=
-                    "emphasis">freedom through design and
-                    self-expression</span>. We <i id="emphasis">liberate</i>
-                    thus burying old traditions and norms to usher forth a
-                    <i id="emphasis">new generation</i>.<br>
-                    <br>
-                    P.S. Feel free to go on to <a href=
-                    "drahcirii.deviantart.com/gallery">DeviantArt</a> to check
-                    out my gallery^^! My art won't bite... well maybe.
-                    <span id="emphasis">Peace♫!</span></p>
-                </div>
-            </div>
-        </section>
+        
         <!-- Modal -->
 
         <div aria-hidden="true" aria-labelledby="myModalLabel" class=
@@ -1055,19 +1074,7 @@
         </div>
 
 
-        <div style="width: 80%; margin: 0 auto 2% auto; display: block;">
-            <hr style="border-color: red; box-shadow: 0 3px 3px rgba(255,0,0,0.7);">
-
-
-            <footer style="font-family: gothic;">
-                <h5>2016 Requiem Underground and Co. <span style=
-                "font-size: 0.7em;">2013-2016 Drahcir-II.</span></h5>
-
-
-                <p>Artwork protected by Creative Commons. Commercial use is
-                prohibited.</p>
-            </footer>
-        </div>
+  
         <!-- /container -->
         <style type="text/css">
 
@@ -1076,16 +1083,10 @@
               h1.title{
                 text-align: center;
               }
+
               #aboutme{
                   padding: 10px;
-                  background-repeat: repeat-y;
-                  background-size: cover;
-                  margin: 0 auto;
-                  width: 80%;
-                  background-color: #111111;
-                  
-
-
+                  margin: 0 auto;                                         
               }
 
                #background{
@@ -1094,8 +1095,6 @@
                   background-size: cover;
                   margin: 0 auto;
                   width: 80%;
-                  border-bottom-left-radius: 10px;
-                  border-bottom-right-radius: 10px;
                   background-color: #111111;
 
               }
@@ -1116,11 +1115,11 @@
               }
                 
           .jumbotron, #banner{
-                background-image: url("pics/moon.png");                
-                background-size: cover;
+                background-image: url("pics/border1.png"), url("pics/border2.png"), url("pics/deck.png");                
+                background-size: contain, contain, cover; 
                 background-repeat: repeat-x;
-                background-position: center;
-                margin-top: 4%;
+                background-position: center top, center bottom, center;
+                
                 
                 }
 
@@ -1132,10 +1131,7 @@
                   color: white;
                 }
 
-                #robottalk{
-                  
-                }
-                
+               
                 #sub-section{
                   color: white;
                 }
@@ -1213,7 +1209,7 @@
                }); 
         </script> 
         <script type="text/javascript">
-        var easter_egg = new Konami(function() { $('.konamiwrap').slideToggle(); $("#requiem-main").addClass("remove");});
+        var easter_egg = new Konami(function() { $('.konamiwrap').slideToggle(); $("#requiem-wrap").addClass("remove");});
         </script>
 
         <!--Style Injector-->
@@ -1229,16 +1225,29 @@
                 });
         </script>
 
+        <img style="position: fixed; visibility: hidden; z-index: 2002; left: 0; bottom: 0;" src="pics/castle.png">
+
         </div><!--/#requiem-main-->
     </div><!--/#requiem-wrap-->
+                
+    <h5 id="footer-text"> 2016 Requiem Underground and Co. <span style="font-size: 0.7em;">2013-2016 Drahcir-II.</span></h5>
+    
+    <img src="pics/castle.png" style=" position: fixed; left: 0; bottom: 0;">
+
+    <div id="custom-footer">
+        <h5 style="background-color: #000000; visibility: hidden;"> For My Dear Love Anne...</span></h5>
+          
+     
+    </div>
 
 
-    <div id="requiem-mobile">
-        <div id="banner" style="height: 20%;">
-            <div id="banner-text" style="padding: 4%; color: white;">
-                <h1 id="title-mobile">Welcome to Requiem</h1>
-            </div>
+    <div id="requiem-mobile" >
+       <div id="background" style=" border-top-left-radius: 10px; border-top-right-radius: 10px; position: absolute; top: 150px; left: 10%;">
+           <h1>Hello</h1>
+       </div>
         </div>
+
+       
     </div>
 </body>
 </html>

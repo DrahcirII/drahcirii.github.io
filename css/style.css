@@ -48,9 +48,12 @@ a:visited {
     background-color: red;
 }
 
+
 .navbar{
     margin-bottom: 0px;
 }
+
+
 
 .navbar-default {
   background-color: #b7b7b7;
@@ -62,21 +65,24 @@ img.brand{
     height: 75%;
 }
 
-#requiem-main {
+#requiem-main, #requiem-wrap {
     background-color: #000;
-    background-image: url(../pics/reqcheck.png);
+    background-image: url(../pics/grunge.png);
     background-attachment: fixed;
     background-repeat: repeat-x repeat-y;
+     background-size: cover;
+    
     cursor: url(../pics/cursor.png),default;
     font-family: "Gothic";
     position: absolute;
     width: 100%;
+    
 
 }
 
 #requiem-mobile {
     background-color: #fff;
-    background-image: url(../pics/reqcheckmb.png);
+    background-image: url(../pics/grungemb.png);
     background-attachment: fixed;
     background-repeat: repeat-y repeat-x;
     cursor: url(../pics/cursor.png),default;
@@ -88,14 +94,15 @@ img.brand{
 
 #bella {
     background-color: #fff;
-    background-image: url(../pics/reqcheckmb.png);
+    background-image: url(../pics/grungemb.png);
     background-attachment: fixed;
     background-repeat: repeat-y repeat-x;
+    background-size: 100% 100%;
     cursor: url(../pics/cursor.png),default;
     font-family: "Gothic";
     width: 100%;
     position: relative;
-    margin-bottom: 700%; 
+ 
     border-left: 2%; 
     border-bottom: 2%; 
     border-right: 2%;
@@ -105,6 +112,7 @@ img.brand{
 #white {
     color: #fff;
 }
+
 
 #robottalk {
     font-family: 'Easta';
@@ -129,6 +137,10 @@ img.brand{
 
 #sub-section {
     font-family: 'Gothic';
+}
+
+#requiem{
+    margin-top: 5%;
 }
 
 p {
@@ -164,6 +176,34 @@ ol {
     border-radius: 5px;
     border: solid 1px;
     color: #333;
+}
+
+#custom-footer{
+    position: fixed;
+    padding: 4px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    background-image: url("../pics/footerbar.png");
+    background-position: right bottom;
+    background-size: contain;
+    color: #ffffff;
+    z-index: 2000;
+    
+}
+
+#footer-text{
+    background-color: #000000; 
+    position: fixed; 
+    padding: 4px; 
+    bottom: 0; 
+    left: 0; 
+    
+    text-align: left; 
+    z-index: 2004; 
+    color: #ffffff;
+    display: block; 
 }
 
 footer {
@@ -244,6 +284,8 @@ footer {
 .remove{
 	display: none;
 }
+
+
 
 /*Loader Code*/
 /* Dropdown Controls 
