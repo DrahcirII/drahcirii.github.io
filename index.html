@@ -55,7 +55,7 @@
     </title>
 </head>
 
-<body data-spy="scroll" data-target="#reqtracker">
+<body data-spy="scroll" data-target="#custom-footer" data-offset="50">
 
         <div class="loader">
         </div>
@@ -1225,20 +1225,36 @@
                 });
         </script>
 
-        <img style="position: fixed; visibility: hidden; z-index: 2002; left: 0; bottom: 0;" src="pics/castle.png">
+        
 
         </div><!--/#requiem-main-->
     </div><!--/#requiem-wrap-->
-                
-    <h5 id="footer-text"> 2016 Requiem Underground and Co. <span style="font-size: 0.7em;">2013-2016 Drahcir-II.</span></h5>
     
-    <img src="pics/castle.png" style=" position: fixed; left: 0; bottom: 0;">
+            <div id="custom-footer">
 
-    <div id="custom-footer">
-        <h5 style="background-color: #000000; visibility: hidden;"> For My Dear Love Anne...</span></h5>
-          
-     
-    </div>
+                <h5 id="footer-text"> <span style="font-size: 0.7em;">2013-2016 Drahcir-II.</span> 2016 Requiem Underground and Co. </h5>
+                
+                    <img src="pics/castle.png" class="img-responsive" style=" position: fixed; left: 0; bottom: 0; width: 25%; ">
+
+                   
+                        <h5 style="background-color: #000000; visibility: hidden;" > For My Dear Love Anne...</span></h5>
+                      
+             
+            </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(function() { 
+                if ($(this).scrollTop() > 500) { 
+                    $("#custom-footer").css('visibility','visible');   
+                    $("#custom-footer").fadeIn('slow');  
+                } 
+                else {     
+                    $("#custom-footer:visible").fadeOut("slow"); 
+                }  
+            });
+        });
+    </script>
 
 
     <div id="requiem-mobile" >
