@@ -3,6 +3,8 @@ $(document).ready(function(e) {
     $('#pagedown').on('click', function() {
 
         $('.pagedownwrap').slideToggle();
+        $("#requiem-main").addClass("remove");
+        $("#main-nav").addClass("remove");
 
     });
 
@@ -21,6 +23,12 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
 
     $('#dropdown').on('click', function() {
+
+        $('.dropdownwrap').slideToggle();
+
+    });
+
+    $('#dropdown2').on('click', function() {
 
         $('.dropdownwrap').slideToggle();
 
