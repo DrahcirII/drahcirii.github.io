@@ -31,11 +31,7 @@
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
     <!--Requiem Default Stylesheet + Style Changer-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script>
-          function swapStyleSheet(sheet){
-            document.getElementById('pagestyle').setAttribute('href', sheet);
-          }
-    </script><!--Baraja Style-->
+    <!--Baraja Style-->
     <link href="css/baraja.css" rel="stylesheet" type="text/css"><!--Scripts-->
 
     <script src="js/jquery.min.js">
@@ -57,8 +53,17 @@
 
 <body data-spy="scroll" data-target="#custom-footer" data-offset="50">
 
-        <div class="loader">
+        <div class="loader">  
+
         </div>
+
+        <noscript id="loader">
+             <center id="robottalk" style="background-color: black; text-align: center;  color: #33ffd6; margin: 15% auto 0 auto; display: block;">
+            Sorry... Java isn't enabled. To use this site, please enable java in your browser!
+            </center>
+
+        </noscript>
+
 
         <style type="text/css">
         .loader {
@@ -73,245 +78,68 @@
 
 
         </style>
+
+        <noscript><style type="text/css">
+        .loader {
+        display: none;
+        }
+
+        #loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('pics/ngear.gif') 50% 50% no-repeat rgb(0,0,0);
+        }
+
+
+        </style></noscript>
+        
         
       
 
-         <noscript id="robottalk" style="background-color: black; text-align: center; border-left:3%; border-right: 3%;padding-top: 2%; padding-bottom: 2%; color: #33ffd6; margin: 0 auto; display: block;">
-            Sorry... Java isn't enabled. To use this site, please enable java in your browser!
-            </noscript>
-
+        
         <section class="konamiwrap" id="bella">
+            
+             <div class="carousel slide" data-interval="7000" data-ride=
+                    "carousel" id="myCarousel" style="width: 100%;"">
+                        <!-- Carousel indicators
+                   <ol class="carousel-indicators"> 
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
+                      <li data-target="#myCarousel" data-slide-to="1"></li> 
+                      <li data-target="#myCarousel" data-slide-to="2"></li> 
+                   </ol>    
+                    -->
 
+                        <div class="carousel-inner" style="width: 100%; padding: 0;">
+                            <div class="item active">
+                             <img src="pics/areq.png" style="width: 100%;">
+                            </div>
+                            <div class="item">
+                                <img src="pics/acreq.png" style="width: 100%;">
+                            </div>
+                           
+                            </div><!--Inner-->
+            </div>
           
 
-             <nav class="navbar navbar-default navbar-static-top" id="bellanav" style="padding-left: 20px; padding-right: 20px">
-            <div class="navbar-header">
-                <button aria-controls="navbar" aria-expanded="false" class=
-                "navbar-toggle collapsed" data-target="#navbarbell" data-toggle=
-                "collapse" type="button"><span class="sr-only">Toggle
-                navigation</span> <span class="icon-bar"></span> <span class=
-                "icon-bar"></span> <span class="icon-bar"></span></button>
-                <a class="pull-left" href="index.html"><img class="brand" src=
-                "pics/hyper/brand.png"></a>
-            </div>
-
-
-            <div aria-expanded="false" class="navbar-collapse collapse" id=
-            "navbarbell" style="height: 1px;">
-                <ul class="nav navbar-nav">
-                    <!--Drop 1-->
-
-
-                    <li class="dropdown">
-                        <a aria-expanded="false" aria-haspopup="true" class=
-                        "dropdown-toggle" data-toggle="dropdown" href="#" role=
-                        "button">Art<span class="caret"></span></a>
-
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">Featured</li>
-
-
-                            <li>
-                                <a href="#">Characters and Worlds</a>
-                            </li>
-
-
-                            <li class="divider" role="separator">
-                            </li>
-
-
-                            <li>
-                                <a href="#">Design</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Traditional Styles</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Digital Method</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--Drop 2-->
-
-
-                    <li class="dropdown">
-                        <a aria-expanded="false" aria-haspopup="true" class=
-                        "dropdown-toggle" data-toggle="dropdown" href="#" role=
-                        "button">Literature<span class="caret"></span></a>
-
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">Featured</li>
-
-
-                            <li>
-                                <a href="pages/lit/skingdom.html">September
-                                Kingdom</a>
-                            </li>
-
-
-                            <li class="divider" role="separator">
-                            </li>
-
-
-                            <li>
-                                <a href="#">My Dark Best Friend</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Faction XI: Lynx</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#">Aurora Project</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--Drop 3-->
-
-
-                    <li class="dropdown">
-                        <a aria-expanded="false" aria-haspopup="true" class=
-                        "dropdown-toggle" data-toggle="dropdown" href="#" role=
-                        "button">Blog+<span class="caret"></span></a>
-
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">Requiem Special</li>
-
-
-                            <li>
-                                <a href=
-                                "https://www.drcdarkwonderland.tumblr.com">Tumblr</a>
-                            </li>
-
-
-                            <li class="divider" role="separator">
-                            </li>
-
-
-                            <li>
-                                <a href=
-                                "https://drahcirii.deviantart.com">DeviantArt</a>
-                            </li>
-
-
-                            <li>
-                                <a href=
-                                "https://plus.google.com/+drahcirii">Google
-                                Plus</a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <li class="dropdown">
-                        <a aria-expanded="false" aria-haspopup="true" class=
-                        "dropdown-toggle" data-toggle="dropdown" href="#" role=
-                        "button">About<span class="caret"></span></a>
-
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#1">Drahcir-II</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#3" >Requiem G Project</a>
-                            </li>
-
-
-                            <li class="divider" role="separator">
-                            </li>
-
-
-                            <li>
-                                <a data-target="#contribute" data-toggle=
-                                "modal" href="#">Contributors</a>
-                            </li>
-
-
-                            <li>
-                                <a href="#" id="pagedownbell">Contact Info</a>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <li class="active">
-                        <a data-target="#ayatebell" data-toggle="modal" href=
-                        "#">Ayaté 愛弥てー<span class=
-                        "sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <a class="navbar-link" href="#3" style=
-                "float: right; margin-top: 10px; color: #33ffd6; font-family: Gothic;">
-                <script src="js/quote.js">
-                </script><span class="sr-only">(current)</span></a>
-            </div>
-            <!--/.nav-collapse -->
-        </nav>
-
-          <div id="robottalk" style="background-color: black; text-align: center; border-left:3%; border-right: 3%;padding-top: 2%; padding-bottom: 2%; color: #33ffd6;">
-            Bella Mode Activated
-            </div>
-
-        <section id="solace">
-             <div  style="margin-top: 6%; text-align: center; color: white;">
-        <h1 id="noto" >DEATH NOTE</h1>
-        <h4 id="desu">デスノト Coded by Drahcir-II</h4>
-          <hr>
-      </div>
-
-      <div class="container" id="page" style="display: block; color: white;  text-align: left; border: solid 1px;  box-shadow:5px 5px 5px rgba(255, 255, 255, 1.0); padding: 15px; ">
-
-            <h3>A Shinigami's Book</h3>
-            <br>
-
-            <form role="form" action="parcel.php" method="get"> 
-                  <div class="form-group"> 
-                    <label for="name">Please enter your victims here...</label> 
-                    <textarea class="form-control" rows="20"></textarea> 
-                  </div> 
-          <button type="submit" class="btn" value="Submit Button">Kill</button>
-                </form>  
-            
-       
-      </div>
-
-        <div style="width: 80%; margin: 0 auto; display: block;">
-            <hr>
-
-
-            <footer style="font-family: gothic;">
-                <h5>2016 Requiem Underground and Co. <span style=
-                "font-size: 0.7em;">2013-2016 Drahcir-II.</span></h5>
-
-
-                <h6>Artwork protected by Creative Commons. Commercial use is
-                prohibited.</h6>
-            </footer>
-        </div>
-        </section>
-    </section> <!--End Bella Mode-->
+        </section> <!--End Konami Mode-->
         
 
   <div id="requiem-wrap"> 
   
         <section class="pagedownwrap" id="about" style=
         " margin-top: 4%; margin-bottom: 10%;">
-            <div id="background">
+            <div id="background" style="background-image: none;">
                 <a class="pull-left" href="index.html" id="sub-section" style="color: white;"><img class="brand"
                 src="pics/brand.png">V2.2</a> 
                 <br>
                 <br>
 
 
-                <div style="width: 80%; margin-left: auto; margin-right: auto; margin-top: 8%;">
+                <div style=" margin-left: auto; margin-right: auto; margin-top: 8%;">
                     <h1 id="title" style=" text-align: center; ">The Devious Developer!</h1>
 
 
@@ -335,48 +163,51 @@
 
 
                             <div id="about" style="text-align: left;">
-                                <p><span id="emphasis">I really love art ^_^! I'd kinda die
+
+                                <ul>
+                                <li><span id="emphasis">I really love art ^_^! I'd kinda die
                                 without it...X_X</span>
-                                </p>
+                                </li>
 
 
-                                <p>I also love Anime and Manga^^ (but I watch only the most
+                                <li>I also love Anime and Manga^^ (but I watch only the most
                                 advertised stuffs! I'm a fan of <span id="emphasis">Eureka
                                 7</span> and <span id="emphasis">Death Note
-                                &gt;:3</span>)</p>
+                                &gt;:3</span>)</li>
 
 
-                                <p>My real name is Richard (yeah....cue the roses and short
-                                gust of wind behind my cape...)</p>
+                                <li>My real name is Richard (yeah....cue the roses and short
+                                gust of wind behind my cape...)</li>
 
 
-                                <p>My favorite two foods are rice and pizza (weird, I
+                                <li>My favorite two foods are rice and pizza (weird, I
                                 know... like some sheltered teenager er something...
-                                ¬_¬)!</p>
+                                ¬_¬)!</li>
 
 
-                                <p>I draw almost <span id="emphasis">anything</span> that
-                                is asked of me, especially if asked by a close friend</p>
+                                <li>I draw almost <span id="emphasis">anything</span> that
+                                is asked of me, especially if asked by a close friend</li>
 
 
-                                <p>I do art of various types and some photography (I deal
+                                <li>I do art of various types and some photography (I deal
                                 in working with pencils and/or software to make my
-                                pictures)</p>
+                                pictures)</li>
 
 
-                                <p>I hope to get to practice more</p>
+                                <li>I hope to get to practice more</li>
 
 
-                                <p>Me and my laptop are like married with how much I work
-                                with it <span id="emphasis">&lt;3 &lt;3 &lt;3!</span></p>
+                                <li>Me and my laptop are like married with how much I work
+                                with it <span id="emphasis">&lt;3 &lt;3 &lt;3!</span></li>
 
 
-                                <p>I'm overactive when using <span id=
+                                <li>I'm overactive when using <span id=
                                 "emphasis">emoticons</span>...pshhh I love those things
-                                ;]</p>
+                                ;]</li>
 
 
-                                <p>I enjoy web design almost as much as I love art!</p>
+                                <li>I enjoy web design almost as much as I love art!</li>
+                                </ul>
 
 
                                 <h2 id="emphasis" style="font-family: Gothic;">...And
@@ -541,7 +372,7 @@
 
 
   <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-static-top" id="main-nav">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -550,7 +381,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-               <a class="pull-left" href="index.html"> <img class="brand img-responsive" src="pics/brand.png"></a>
+               <a href="index.html"> <img class="navbar-brand" id="brand" src="pics/brand.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
           <ul class="nav navbar-nav">
@@ -613,11 +444,11 @@
 
     <section id="requiem-main">
         <div id="requiem">
-            <!-- Main jumbotron for a primary marketing message or call to action -->
+            
 
-
-            <div class="jumbotron" style="font-size: 1.5em;">
-                <div class="container">
+        
+            <div class="landing-screen" id="banner" style="font-size: 1.5em;">
+                
                     <div class="carousel slide" data-interval="7000" data-ride=
                     "carousel" id="myCarousel">
                         <!-- Carousel indicators
@@ -630,107 +461,151 @@
 
                         <div class="carousel-inner">
                             <div class="item active">
-                                <h1 id="title">The Underground!</h1>
+                                <h1 id="title3">Solace Among the Darkness</h1>
                                 <br>
 
 
-                                <p id="sub-section">Behold the dark wonderland
-                                of <span id="emphasis">Requiem Underground</span>! A place of art, design, and
-                                wonder for those who dare to step onto the
-                                other side!</p>
+                                <p id="sub-section" style="font-size: 0.8em;">Welcome to Requiem, stardust child.</p>
                             </div>
 
 
                             <div class="item">
-                                <h1 id="title">Access to Resources</h1>
+                                <h1 id="title3">Freedom Above Conformity</h1>
                                 <br>
 
 
-                                <p id="sub-section">Here, we provide many customization options for style savvy developers!</p>
+                                <p id="sub-section" style="font-size: 0.8em;">A world of the unknown and a haven for creativity.</p>
                             </div>
 
 
                             <div class="item">
-                                <h1 id="title">Change Your World</h1>
+                                <h1 id="title3">Requiem to the World</h1>
                                 <br>
 
 
-                                <p id="sub-section">
-                                <span id="emphasis">Normal</span> is not in our vocabulary; let
-                                your creativity flow! Read more of the Requiem
-                                Project today!</p>
+                                <p id="sub-section" style="font-size: 0.8em;">
+                                A world of insight, a world of creation, Fills the wonderful space, We reach out our hand to the Dark Wonderland, And encounter a wonderful place</p>
                             </div>
 
-                            <!-- Modal -->
+                            <style type="text/css">
+                                .item{
+                                    margin-top: 3%;
+                                }
+                            </style>
+
+                            
                             
                             </div><!--Inner-->
                         </div>
-                    </div><!--container-->
+                  
                   
                 </div>
-            </div>
+            
             
 
+    <div id="content">
 
-
-       <section id="0" style="margin-bottom: 7%; margin-top: 7%;">
+       <section id="1" style="margin-bottom: 7%; margin-top: 7%;">
             <!-- Example row of columns -->
 
+        <div  id="projects" style="background-color: #000; padding: 20px;">
+                    <h1 style="margin-bottom: 5%;"><span id="title">Latest Projects</span></h1>
 
-            <div class="row" id="tabbed" style=
-            "color: white; width: 80%; margin: 0 auto;">
+                    <p style="font-size: 1.3em;">#September Kingdom</p>
+                </div>
+
+
+        <div id="tabbed">
+            <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+          
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
             
-                <div class="col-md-4">
-                    <h2><span id="subtitle">Design</span>
-                    </h2>
+            <style type="text/css">
+               #sidebar-wrapper {
+                
+                    background: #000;
+                    
+                }
 
+                /* Sidebar Styles */
 
-                    <p>Digital creations and renderings drive Req's engines and
-                    keeps the style flowing! From skins to edits, many ideas
-                    roll off of the shelf and are cooked right here.</p>
-                    <br>
-                    <br>
-                </div>
+                    .sidebar-nav {
+                        width: 250px;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                    }
 
+                    .sidebar-nav li {
+                        text-indent: 20px;
+                        line-height: 40px;
+                    }
 
-                <div class="col-md-4" style="">
-                    <h2><span id="subtitle">Art</span>
-                    </h2>
+                    .sidebar-nav li a {
+                        display: block;
+                        text-decoration: none;
+                        color: #999999;
+                    }
 
+                    .sidebar-nav li a:hover {
+                        text-decoration: none;
+                        color: #fff;
+                        background: rgba(255,255,255,0.2);
+                    }
 
-                    <p>From the deviant, Drahcir II, view works of progress
-                    over three years in the making, and experience the
-                    wonderland. <a href="index.html">Requiem</a> is the future
-                    of an art movement concieved back as far as 2009. Join the
-                    underground world of Requiem!</p>
-                </div>
+                    .sidebar-nav li a:active,
+                    .sidebar-nav li a:focus {
+                        text-decoration: none;
+                    }
 
+                    .sidebar-nav > .sidebar-brand {
+                        height: 65px;
+                        font-size: 18px;
+                        line-height: 60px;
+                    }
 
-                <div class="col-md-4">
-                    <h2><span id="subtitle">Change</span>
-                    </h2>
+                    .sidebar-nav > .sidebar-brand a {
+                        color: #999999;
+                    }
 
+                    .sidebar-nav > .sidebar-brand a:hover {
+                        color: #fff;
+                        background: none;
+                    }
+            </style>
+                
 
-                    <p>At <a href="index.html">Requiem</a>, there are
-                    paragraphs of stories expanding from the future to fantasy
-                    worlds at the edge of reality. Meet characters such as
-                    Anne, Luster, Angel, Nj, and Req's very own mascot,
-                    <a href="#">Ayate!</a></p>
-                    <br>
-                </div>
             </div>
         </section>
 
 
-        <section id="1">
-            <div id="imagecap" style=
-            " display: block; margin: 0 auto; box-shadow:12px rgba(255,0,0, 0.5); position: relative;">
-            <a href="#2"><img id="dropdown2" src="pics/cover.png" style="display: block; margin: 0 auto;width: 80%; height: 80%; border-top-left-radius: 10px; border-top-right-radius: 10px;"></a>
-            </div>
-        </section>
-        
 
-                <section class="dropdownwrap" id="2" >
+       
+
+            <section class="dropdownwrap" id="2" style="margin-bottom: 7%;">
                     <div id="background" style="border-left: solid 5px;">
                         <div id="wrapper" style="margin: 12%;">
                             <h1 id="title" style="text-align: center; color: #fff;">The
@@ -762,68 +637,16 @@
                     </div>
                 </section>
 
-        <section id="3" style="margin-bottom: 7%;">
-            <div style="border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; padding: 10px; background-repeat: repeat-y; background-size: cover; margin: 0 auto; width: 80%; background-color: #222222;">
-                <div id="services" style="margin: 5% auto 0 auto; display: block; width: 80%; text-align: left; padding: 10px;">
-                    <h1 id="title"  style="text-align: center;"">Services to be Rendered</h1>
-                        <div class="well">
-                            <ul style=" margin-top: 3%;">
-                                <li>Custom Webpage Design</li>
-                                <li>Prints</li>
-                                <li> Business Cards</li>
-                                <li>Custom Graphics</li>
-                                <li>Apparel <span class="badge">Not in Development</span></li>
-                                <li>Custom Accesories <span class="badge">Not in Development</span></li>
-                            </ul>
-                         </div>
-
-                            <p style="margin-top: 5%;>With a bigger fanbase and a basic business model, Requiem will be able to spread it's design influence among a wider area and become a design staple of the net. Future projects such as <span id="emphasis">Requiem Social</span>, a cross between <span style="color: #bbbbff;">Twitter</span>, <span style="color: #0000ff;"> MySpace</span>, and <span style="color: #00cc00;">DeviantART</span>, will allow users to have a sleek and social hangout to post about the things that matter most in their lives! For the plan, Requiem intends to be the future face of design, and style. Want to contribute? Be sure to contact my e-mail to see how you can help ^_^ ciao!</p>                       
-                 
+            <section id="x" style="display: none;">
+                <div id="imagecap" style=" display: block; margin: 0 auto; box-shadow:12px rgba(255,0,0, 0.5); position: relative;">
+                    <a href="#2"><img src="pics/cover.png" style="display: block; margin: 0 auto;width: 100%; height: 80%; border-top-left-radius: 10px; border-top-right-radius: 10px;"></a>
                 </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
         
         <!-- Modal -->
 
-        <div aria-hidden="true" aria-labelledby="myModalLabel" class=
-        "modal fade" id="preview" role="dialog" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button aria-hidden="true" class="close" data-dismiss=
-                        "modal" type="button">&times;</button>
-
-                        <h4 class="modal-title" id="myModalLabel">
-                        </h4>
-
-
-                        <p id="sub-section" style=
-                        "font-size: 1.5em; color: darkred;">About</p>
-                    </div>
-
-
-                    <div class="modal-body" style="color: red;">
-                        <img id="robot" src="pics/ayate.png" style=
-                        "height: 100%; width: 100%; margin: 0 auto; display: block; text-align: center;">
-
-                        <aside style="text-align: right;">
-                            <p>Ayate Powered Up at 200%, by <span id=
-                            "emphasis"><i>Drahcir II</i></span></p>
-                        </aside>
-                    </div>
-
-
-                    <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal"
-                        type="button">Rock On!</button>
-                    </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal -->
-        </div>
         <!-- Modal -->
 
         <div aria-hidden="true" aria-labelledby="myModalLabel" class=
@@ -887,10 +710,6 @@
                         which I get constant support in my efforts</h3>
 
 
-                        <h3 class="state">My good friend Jerome for coining the
-                        phrase "Get Wrecked" ^0^!</h3>
-
-
                         <h3 class="state">"Sensei" Melissa S. for opening my
                         eyes to the vast world of art and...</h3>
                         <br>
@@ -941,8 +760,8 @@
                   background-repeat: repeat-y;
                   background-size: cover;
                   margin: 0 auto;
-                  width: 80%;
-                  background-color: #111111;
+                 
+                  background-color: #000;
 
               }
               #statement{
@@ -960,13 +779,18 @@
                 display: block;
                 
               }
+
+              
                 
-          .jumbotron, #banner{
-                background-image: url("pics/border1.png"), url("pics/border2.png"), url("pics/deck.png");                
-                background-size: contain, contain, cover; 
-                background-repeat: repeat-x;
-                background-position: center top, center bottom, center;
-                
+                .landing-screen, #banner{
+                background-image: url("pics/border.png"), url("pics/solari.png"),url("pics/deck.png");                
+                background-size:  auto 100%, 50% auto, cover; 
+                background-repeat: repeat-x, no-repeat, repeat-x;
+                background-position: center, right center, center;
+                padding: 25px;
+                display: block;
+                margin: 0 auto;
+                height: 300px;
                 
                 }
 
@@ -978,9 +802,18 @@
                   color: white;
                 }
 
+                #title2{
+                  color: white;
+                }
                
                 #sub-section{
                   color: white;
+                }
+
+                .navbar-brand{
+                    padding-top: 0px;
+                    padding-bottom: 0px; 
+                    
                 }
 
                 /*Desu Noto Page Style*/
@@ -1014,39 +847,26 @@
                 background-color: black;
                 width: 75%; 
                 height: 1036px;
+              } 
+
+              #tabbed{
+                width: 20%;
+                float: left;
               }
 
-              #noto{
-             
-              }
-
-              #desu{
-              
-              }
-
-
-
-        .form-control {
-            display: block;
-            width: 100%;
-            height: 34px;
-            padding: 6px 12px;
-            font-size: 14px;
-            line-height: 1.428571429;
-            color: #ffffff;
-            background-color: #000000;
-            background-image: none;
-            border: 1px solid #000000;
-            border-radius: 0px;
-           
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0);
-
-            transition: none
-        }
-
-              
-
+              #projects{
+                float: left;
+                width: 80%;
+                
+               
+              }             
+            
+            
         </style>
+
+
+
+
 
         <!--Easter Code-->
         <script>
@@ -1075,6 +895,8 @@
         
 
         </div><!--/#requiem-main-->
+
+        <div id="footer-wrap" class="remove">
          <div id="custom-footer">
 
                 <h5 id="footer-text"> <span style="font-size: 0.7em;">2013-2016 Drahcir-II.</span> 2016 Requiem Underground and Co. </h5>
@@ -1086,7 +908,18 @@
                       
              
             </div>
+            
 
+            <div id="robottalk" class="pause" style=" position: fixed; top:0px; left: 0px; width: 100%; background-color: black; text-align: center; border-left:3%; border-right: 3%;padding-top: 2%; padding-bottom: 2%; color: #33ffd6; margin: 0 auto; display: block;">
+            <audio id="aud" src="audio/estate.wav" autoplay controls></audio>
+     
+            </div>
+           
+            <img id="castlemb" src="pics/castle.png"  style=" position: fixed; left: 25%; bottom: 0;  width: 50%; ">
+       
+        </div>
+
+            
             <!-- Modal -->
                                 <div aria-hidden="true" aria-labelledby=
                             "myModalLabel" class="modal fade" id="ayated" role=
@@ -1141,6 +974,45 @@
                                 </div>
                                 <!-- /.modal -->
                             </div>
+
+                                    
+                <div aria-hidden="true" aria-labelledby="myModalLabel" class=
+                "modal fade" id="preview" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-hidden="true" class="close" data-dismiss=
+                                "modal" type="button">&times;</button>
+
+                                <h4 class="modal-title" id="myModalLabel">
+                                </h4>
+
+
+                                <p id="sub-section" style=
+                                "font-size: 1.5em; color: darkred;">About</p>
+                            </div>
+
+
+                            <div class="modal-body" style="color: red;">
+                                <img id="robot" src="pics/ayate.png" style=
+                                "height: 100%; width: 100%; margin: 0 auto; display: block; text-align: center;">
+
+                                <aside style="text-align: right;">
+                                    <p>Ayate Powered Up at 200%, by <span id=
+                                    "emphasis"><i>Drahcir II</i></span></p>
+                                </aside>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal"
+                                type="button">Rock On!</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal -->
+                </div>
     </div><!--/#requiem-wrap-->
     
            
@@ -1149,15 +1021,17 @@
         $(function(){
             $(window).scroll(function() { 
                 if ($(this).scrollTop() > 500) { 
-                    $("#custom-footer").css('visibility','visible');   
-                    $("#custom-footer").fadeIn('slow');  
+                    $("#footer-wrap").css('visibility','visible');   
+                    $("#footer-wrap").fadeIn('slow');  
                 } 
                 else {     
-                    $("#custom-footer:visible").fadeOut("slow"); 
+                    $("#footer-wrap:visible").fadeOut("slow"); 
                 }  
             });
         });
     </script>
+
+    
 
 
     <div id="requiem-mobile" >
@@ -1169,7 +1043,7 @@
    
         </div>
 
-       <img id="castlemb" src="pics/castle.png"  style=" position: fixed; left: 25%; bottom: 0;  width: 50%; ">
+      
 
     
 </body>

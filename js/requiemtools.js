@@ -5,7 +5,7 @@ $(document).ready(function(e) {
         $('.pagedownwrap').slideToggle();
         $("#requiem-main").addClass("remove");
         $("#main-nav").addClass("remove");
-
+       
     });
 
 })
@@ -39,6 +39,7 @@ $(document).ready(function(e) {
 
 $(window).load(function() {
     $(".loader").fadeOut("slow");
+     $("#loader").fadeOut("slow");
 })
 
 
