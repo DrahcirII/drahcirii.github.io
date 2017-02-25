@@ -1,24 +1,5 @@
-/*Style by Drahcir-II requiemdrc.tumblr.com*/
+/*Style by Drahcir-II drahcirii.tumblr.com*/
 /* Base Styling */
-@font-face {
-    font-family: 'Gothic';
-    src: url(../fonts/gothic.ttf);
-}
-
-@font-face {
-    font-family: 'Grutch';
-    src: url(../fonts/grutchshaded.ttf);
-}
-
-@font-face {
-    font-family: 'Dampfplatz';
-    src: url(../fonts/dampfplatz.ttf);
-}
-
-@font-face {
-    font-family: "Easta";
-    src: url(../fonts/pf_easta_seven.ttf);
-}
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
@@ -34,7 +15,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 a:link {
     color: #ff8e8e;
-    cursor: url(../pics/cursorl.png),default;
+    cursor: url(https://66.media.tumblr.com/e424611362585e2563d892fa1bef7a26/tumblr_inline_ocl2z5drL21si1yfq_540.png),default;
 }
 
 a:-webkit-any-link{
@@ -47,34 +28,6 @@ a:hover {
 
 a:visited {
     color: red;
-}
-
-b{
-    font-weight: bolder;
-}
-
-i{
-    font-style: italic;
-}
-
-p {
-    color: #fff;
-    font-family: 'Gothic';
-    margin-bottom: .7em;
-}
-
-li {
-    color: #fff;
-    font-family: 'Gothic';
-}
-
-ol {
-    color: #fff;
-    font-family: 'Gothic';
-}
-
-#heading{
-    margin-bottom: .5em;
 }
 
 .btn {
@@ -102,16 +55,17 @@ img.brand{
 html,body,#requiem-main{
   
     color: #fff;
-     cursor: url(../pics/cursor.png),default;
+     cursor: url(https://66.media.tumblr.com/38b336f0b6add9e74e8dbf8cf8047ff6/tumblr_inline_ocl2yrmVIf1si1yfq_540.png),default;
+
+     
+  
 }
 
-#requiem-main{
-    margin-bottom: 10%;
-}
+
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
     background-color: #400000;
-    background-image: url(../pics/gradient.png);
+    background-image: url(https://67.media.tumblr.com/87eb6ae037666c0bf5d134a337f42312/tumblr_inline_ocl2uf7kUm1si1yfq_540.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
@@ -135,13 +89,16 @@ html,body,#requiem-main{
 
 #item{
     background-color: rgba(0,0,0,0.7); border: solid 1px; border-color: #222; padding: 20px;
-    width: 71%;
     border-radius: 10px;
     margin-right: 2%;
     margin-left: 3%;
     box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.075);
     color: #fff;
+    width: 71%;
+    margin-bottom: 3%;
 }
+
+
 
 #inner-content{
     display: block;
@@ -157,10 +114,16 @@ html,body,#requiem-main{
     width: 20%;
     float: right;
     margin-right: 2%;
+    
   }     
 
+.sidbar-nav{
+    border-left: solid 5px;
+    border-color: #8b0000;
+}
+
 .tabbed{
-     background-image: url(../pics/section-ender.png); 
+     background-image: url(https://66.media.tumblr.com/81a15e11a987e058bdac8b4c1e88dca8/tumblr_inline_ocl2xvimTZ1si1yfq_540.png); 
      background-position: right center; 
      background-repeat: no-repeat; 
      background-size: auto 50%; 
@@ -229,7 +192,7 @@ background: #000;
 
 body{
     background-color: #000;
-    background-image: url(../pics/grunge.png);
+    background-image: url(http://static.tumblr.com/sbik24b/S9Hod1ze6/grunge.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
      background-size: cover;
@@ -251,7 +214,7 @@ body{
 
 #bella {
    
-    cursor: url(../pics/cursor.png),default;
+    cursor: url(https://66.media.tumblr.com/38b336f0b6add9e74e8dbf8cf8047ff6/tumblr_inline_ocl2yrmVIf1si1yfq_540.png),default;
     font-family: "Gothic";
     width: 100%; 
     border-left: 2%; 
@@ -304,19 +267,36 @@ body{
     font-family: 'Gothic';
 }
 
-#emphasis {
-    color: #ff8e8e;
+
+p {
+    color: #fff;
+    font-family: 'Gothic';
+    line-height: 200%;
+    padding: 10px;
 }
 
+li {
+    color: #fff;
+    font-family: 'Gothic';
+}
+
+ol {
+    color: #fff;
+    font-family: 'Gothic';
+}
+
+
+
+
 #background {
-    background-image: url(../pics/bg.png);
+    background-image: url(https://67.media.tumblr.com/66a51e3c98d71e145febdee7ca614a5e/tumblr_inline_ocl32bqE2A1si1yfq_540.png);
     background-attachment: scroll;
     background-repeat: repeat-y;
     font-family: 'Gothic';
 }
 
 .landing-screen, #banner{
-    background-image: url("../pics/border.png"), url("../pics/solari.png"),url("../pics/deck.png");                
+    background-image: url("http://static.tumblr.com/sbik24b/cHzod1yks/border.png"), url("https://65.media.tumblr.com/091385c8ed3ed5d20fde463b04c0192c/tumblr_inline_ocl32wE4SG1si1yfq_540.png"),url("http://static.tumblr.com/sbik24b/BKbod1z8t/deck.png");                
     background-size:  auto 100%, 50% auto, cover; 
     background-repeat: repeat-x, no-repeat, repeat-x;
     background-position: center, right center, center;
@@ -324,7 +304,6 @@ body{
     display: block;
     margin: 0 auto;
     height: 300px;
-    margin-top: 5%;
     
     }
 
@@ -342,10 +321,11 @@ body{
     bottom: 0;
     right: 0;
     width: 25%;
-    z-index: 2000;   
+    z-index: 2000;
+    
+    
+    
 }
-
-
 
 #footer-text{
     position: fixed; 
@@ -362,7 +342,6 @@ body{
     border-left:  solid 2px;
     border-color: #000;
 }
-
 
 footer {
     color: #fff;
@@ -408,20 +387,10 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-    
-    #sidebar{
+    #requiem-main {
         display: none;
+
     }
-
-    #item{
-        width: 95%;
-    }
-
-    .tabbed{
-     background-image: unset; 
-     
-}
-
     #custom-footer{
         display: none;
     }
@@ -431,10 +400,20 @@ footer {
     }
 }
 
+@media screen and (max-width: 948px) {
+    #navmail {
+        display: none;
 
+    }
+
+    
+
+}
 
 @media screen and (min-width: 640px) {
-    
+    #requiem-mobile {
+        display: none;
+    }
 
     #castlemb{
         display: none;
@@ -445,7 +424,86 @@ footer {
 	display: none;
 }
 
+/*Tumblr Specific*/
+/*Post styles*/
 
+blockquote {
+    background: rgba(0, 0, 0, 0.06);
+    margin: 0;
+    padding: 2%;
+}
+.photo img {
+    display: block;
+    margin: 0 auto;
+    size: 100%;
+}
+
+.photoset img {
+    display: block;
+    margin: 0 auto;
+    size: 80%;
+}
+
+article img{ 
+    display: block;
+    margin: 0 auto;
+}
+.html_photoset {
+    text-align: center;
+    background: rgb(68, 68, 68);
+    padding: 6% 0;
+}
+.link .title a {
+    border-bottom: 1px solid;
+}
+.chat ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.chat li {
+    padding: 0.5% 2%;
+}
+.chat .even {
+    background: #f2f2f2;
+}
+.user {
+    font-size: 0.85em;
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+}
+/*Tags*/
+.metadata {
+    font-size: 0.9em;
+    padding: 2% 4%;
+}
+.metadata ul {
+    width: 100%
+    height: auto;
+    display: inline-block;
+}
+.metadata ul, #notes ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tags {
+    margin-top: 1% !important;
+}
+.tags li {
+    border: 1px solid #353535;
+    padding: 0.5%;
+    
+}
+.index li, .tags li {
+    float: left;
+    margin-right: 2%;
+}
+.note {
+    border-bottom: 1px solid white;
+    padding: 1% 0;
+}
 
 
 
@@ -465,4 +523,3 @@ http://www.derby-web-design-agency.co.uk/blog-post/how-to-create-a-jquery-slided
 .konamiwrap {
     display: none;
 }
-

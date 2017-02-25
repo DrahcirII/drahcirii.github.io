@@ -4,7 +4,8 @@ $(document).ready(function(e) {
 
         $('.pagedownwrap').slideToggle();
         $("#requiem-main").addClass("remove");
-        $("#main-nav").addClass("remove");
+
+        
        
     });
 
