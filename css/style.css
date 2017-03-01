@@ -332,7 +332,7 @@ body{
 }
 
 .landing-screen, #banner{
-    background-image: url("../pics/border.png"), url("../pics/solari.png"),url("../pics/deck.png");                
+    background-image: url("../pics/border.png"), url("../pics/Solari.png"),url("../pics/deck.png");                
     background-size:  auto 100%, 50% auto, cover; 
     background-repeat: repeat-x, no-repeat, repeat-x;
     background-position: center, right center, center;
