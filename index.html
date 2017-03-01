@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--Metadata-->
+    <!--Metadata!-->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <!--Page Data--><!--Changing Title Code-->
+    <!--meta name="if:Following in sidebar" content="1"/>
+    <meta name="if:Hide sidebar" content="0"/>
+    <meta name="if:Likes in sidebar" content="1"/>
+    <meta name="if:Search and description in sidebar" content="1"/>
+    {block:Description}
+    <meta name="description" content="{MetaDescription}" />
+    {/block:Description} -->
+    
 
     <script>
+      window.onblur = function () { document.title = 'Are you there?'; }
 
-    window.onblur = function () { document.title = 'Are you there?'; }
+      window.onfocus = function () { document.title = 'Requiem Graphics' }
+      </script>
+      <script>
 
-    window.onfocus = function () { document.title = 'Requiem Graphics' }
+       var poemstuff = [
+
+            '<title>Requiem by Drahcir-II<\/title>',
+            '<title>Defy Your World<\/title>', 
+            '<title>Get-Req&#8217d<\/title>',             
+            
+                ];
+                var poemLineNumber = Math.random() * (poemstuff.length - 1);
+                poemLineNumber = poemLineNumber.toFixed(0);
+                document.write(poemstuff[poemLineNumber]);
     </script>
-    <script>
 
-     var poemstuff = [
-
-          '<title>Requiem by Drahcir-II<\/title>',
-          '<title>Defy Your World<\/title>', 
-          '<title>Get-Req&#8217d<\/title>',             
-          
-              ];
-              var poemLineNumber = Math.random() * (poemstuff.length - 1);
-              poemLineNumber = poemLineNumber.toFixed(0);
-              document.write(poemstuff[poemLineNumber]);
-    </script>
     <link href="pics/logo.jpg" id="pagestyle" rel="shortcut icon"><!--Styles-->
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -52,16 +59,24 @@
     </title>
 </head>
 
-<body>
+<body class="{block:IndexPage}is-index-page{/block:IndexPage} {block:PermalinkPage}is-permalink-page{/block:PermalinkPage} readysteadygo">       
 
-
-       <div class="loader">  
+        <div id="loader-wrapper">
+          
+          <div id="loader"> 
             <center id="robottalk" style="background-color: black; text-align: center;  color: #fff; margin: 15% auto 0 auto; display: block;">
-            Loading...
+                <img style="margin: 0 auto; width: 100%; " src="pics/brand.png">
+                <img style="margin: 0 auto; width: 100%; " src="pics/gear.gif">
             </center>
+          </div>
+          
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
         </div>
 
-        <noscript id="loader">
+        <noscript class="loader">
              <center id="robottalk" style="background-color: black; text-align: center;  color: #33ffd6; margin: 15% auto 0 auto; display: block;">
             Sorry... Java isn't enabled. To use this site, please enable java in your browser!
             </center>
@@ -69,26 +84,13 @@
         </noscript>
 
 
-        <style type="text/css">
-        .loader {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        background: url('pics/gear.gif') 50% 50% no-repeat rgb(0,0,0);
-        }
-
-
-        </style>
 
         <noscript><style type="text/css">
-        .loader {
+        #loader {
         display: none;
         }
 
-        #loader {
+        .loader {
         position: fixed;
         left: 0px;
         top: 0px;
@@ -100,32 +102,53 @@
 
 
         </style></noscript>
-        
-      
 
+        <!-- Search results 
+        {block:SearchPage}
+        <div class="search-page message">
+       
+        </div>
+        {/block:SearchPage}
+    
+        {block:TagPage}
+        <div class="tag-page message">
+       
+        </div>
+        {/block:TagPage} -->      
+      
+      <!-- Begin The Requiem -->
         
         <section class="konamiwrap" id="bella">
             
-             <div class="carousel slide" data-interval="7000" data-ride=
-                    "carousel" id="myCarousel" style="width: 100%;">
-                        <!-- Carousel indicators
-                   <ol class="carousel-indicators"> 
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
-                      <li data-target="#myCarousel" data-slide-to="1"></li> 
-                      <li data-target="#myCarousel" data-slide-to="2"></li> 
-                   </ol>    
-                    -->
+             
+             <section id="rg">
+                    <div style=" background-color: rgba(0,0,0,0.5); ">
+                        <div id="wrapper" style="padding: 5%;">
+                            <h1 id="title2" style="text-align: center;">The Requiem Project</h1>
 
-                        <div class="carousel-inner" style="width: 100%; padding: 0;">
-                            <div class="item active" style="margin: 0;  margin: 0 auto;">
-                             <img src="pics/areq.png" style="width: 100%;">
-                            </div>
-                            <div class="item" style="margin: 0;  margin: 0 auto;">
-                                <img src="pics/acreq.png" style="width: 100%;">
-                            </div>
-                           
-                            </div><!--Inner-->
-            </div>
+                            <div id="reqpro"></div>
+                            <p id="statment" style="padding: 60px 60px 0px 60px; margin-bottom: 3%; font-size: 1.2em; text-indent: 1.5em; text-align: left; line-height: 1.8em;">
+                            <span id="emphasis" style="font-family: times; font-size: 1.3em;">Requiem</span> is
+                            a concept concieved as a future group to promote <b id=
+                            "emphasis">creativity</b> and <b id="emphasis">free
+                            will</b> to the public. The idea is to <span id=
+                            "emphasis">add change to a society of the few</span> by not
+                            only <span id="emphasis">augmenting</span> the
+                            <i>thinking</i> of the individual, but by encouraging the
+                            spread of ideas. The mission as a group of <span id=
+                            "emphasis">free thinkers</span> that sail the international
+                            waters of the net, is finding the true meaning of <span id=
+                            "emphasis">freedom through design and
+                            self-expression</span>. We <i id="emphasis">liberate</i>
+                            thus burying old traditions and norms to usher forth a
+                            <i id="emphasis">new generation</i>.<br>
+                            <br>
+                            <img src="pics/logo.png" style="display: block; margin: 0 auto; width: 25%;">
+
+                        <center><h3 class="title" style="font-family:">Solace among the darkness, freedom above conformity!</h3></center>
+                        </div>
+                    </div>
+                </section>
           
 
         </section> <!--End Konami Mode-->
@@ -196,7 +219,7 @@
                 </ul>
             </li>  
             <!--Ayate Drop-->
-            <li class="active" id="robottalk"><a href="#" data-toggle="modal" data-target="#ayated">Ayate 愛弥てー<span class="sr-only">(current)</span></a></li>
+            <li class="active" id="robottalk"><a href="#" data-toggle="modal" data-target="#ayated" class="aya-active">Ayate 愛弥てー<span class="sr-only">(current)</span></a></li>
           </ul>
 
           <ul class="">
@@ -207,9 +230,9 @@
       </div><!--/.contianer-->
     </nav>
   
-        <section class="pagedownwrap" id="about" style=" margin-bottom: 10%;">
+        <section class="pagedownwrap" id="about">
          
-                <div id="rotate-div" style="margin-top: 5%;">
+                <div id="rotate-div" style="margin-top: 10%; margin-bottom: 10%;">
                       
                                  <p align='justify'><i>&nbsp;</i></p>           
                                 
@@ -218,26 +241,87 @@
                                 <table>
                                   <tr>
                                     <td id="null" ></td>
-                                    <td><center id="bartext" class="1" ><a href="#" >DeviantART</a></center></td>
+                                    <td><center id="bartext" class="1" ><a href="#" >The Developer</a></center></td>
                                     <td id="null"></td>
                                   </tr>
                                   <tr>
                                     <td id="bartext2" ></td>
-                                    <td style="background-image: url('pics/bg.png'); background-position: center center;" id="middle"><img id="char" src="pics/char.png"/></td>
+                                    <td style="background-image: url('pics/bg.png'); background-position: center center;" id="middle"><a href="#" data-target="#aboutdrc"  data-toggle="modal"><img id="char" src="pics/char.png"/></a></td>
                                     <td id="bartext2"></td>
                                   </tr>
                                   <tr>
                                     <td id="null"></td>
-                                    <td><center id="bartext" class="4" ><a href="#">Twitter</a></center></td>
+                                    <td><center id="bartext" class="4" ><a href="#">Drahcir-II</a></center></td>
                                     <td id="null"></td>
                                   </tr>
                                 </table>
                                 </center>
-                                </div>
-
-                                
+                                </div>                               
                            
                 </div> 
+
+                <div aria-hidden="true" aria-labelledby="myModalLabel" class=
+                "modal fade" id="aboutdrc" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-hidden="true" class="close" data-dismiss=
+                                "modal" type="button">&times;</button>
+
+                                <p id="sub-section" style=
+                                "font-size: 1.5em; color: darkred;">About Drahcir-II (Richard T. II)</p>
+                            </div>
+
+
+                            <div class="modal-body" style="color: red;">
+                                <article id="aboutme" style="padding: 60px; font-size: 15px;">                       
+                      
+                                    <p style="text-align: center;">Hello everyone^^ I know it's a slight mouthfull, but I'm pretty much on a username basis, so you can call me <span id="emphasis" >DRC</span> for short ^_~.</p>
+                                      <br> 
+                                      <p style="text-align: center;">First off, I'll tell a little more about myself, so...</p>
+                                      <br>
+                                        <div id="about" style="text-align: left;">
+                                          <p><span id="emphasis">I really love art ^_^! I'd kinda die without it...X_X</span></p>
+                                          <p>I also love Anime and Manga^^ (but I watch only the most advertised stuffs! I'm a fan of <span id="emphasis">Eureka 7</span> and <span id="emphasis"> Death Note >:3</span>)</p>
+                                          <p>My real name is Richard (yeah....cue the roses and short gust of wind behind my cape...)</p>
+                                          <p>My favorite two foods are rice and pizza (weird, I know... like some sheltered teenager er something... ¬_¬)!</p>
+                                          <p>I draw almost <span id="emphasis">anything</span> that is asked of me, especially if asked by a close friend</p>
+                                          <p>I do art of various types and some photography (I deal in working with pencils and/or software to make my pictures)</p>
+                                          <p>I hope to get to practice more</p>
+                                          <p>Me and my laptop are like married with how much I work with it <span id="emphasis">&lt;3 &lt;3 &lt;3!</span></p>
+                                          <p>I'm overactive when using <span id="emphasis">emoticons</span>...pshhh I love those things ;]</p>
+                                          <p>I enjoy web design almost as much as I love art!</p>
+                                            <br>
+                                        <p>   
+                                           P.S. Feel free to go on to <a href="drahcirii.deviantart.com/gallery">DeviantArt</a> to check out my gallery^^! My art won't bite... well maybe. <span id="emphasis">Peace♫!</span>
+                                        </p>
+                                  </article>
+
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal"
+                                type="button">Rock On!</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal -->
+
+                    <div id="page-footer"> <!--Custom Footer Style-->
+                     <div id="custom-footer">
+
+                            <h5 id="footer-text"> <span style="font-size: 0.7em;">2013-2016 Drahcir-II.</span> 2016 Requiem Underground and Co. </h5>
+                            
+                                <img src="pics/castle.png" class="img-responsive" style=" position: fixed; left: 0; bottom: 0; width: 27%; ">
+
+                               
+                                    <h5 style="background-color: #000000; visibility: hidden;" > For My Dear Love Anne...</h5>
+                                  
+                         
+                        </div>
+
           
 
     <style type="text/css">
@@ -251,11 +335,8 @@
       color: unset;
   }
     
-    html{        
-      height: 120%;
-    }
 
-   
+
 
     #briar-wrap{
       background-color: url("pics/grunge.png");
@@ -293,7 +374,7 @@
       margin: 0 auto;
       
       width: 100%;
-      transfowrm: rotate(-45deg);
+      transform: rotate(-45deg);
       text-align: center;
 
       
@@ -396,35 +477,43 @@
 
     
 
-       <section id="1" class="clearfix" style="margin-top: 3%; ">
+       <section id="1"  style="margin-top: 3%; ">
         <div id="content" > <!--Floated-->
                <!--Sidebar-->
         <div id="sidebar">
-            <div id="inner-content" style="border-left: solid 5px;">
+            <div id="sidebar-inner" >
             <ul class="sidebar-nav">
           
                 <li>
-                    <a href="#">More Projects</a>
+                    <a href="#" id="sidebar-text">More Projects</a>
                 </li>
                 <li>
-                    <a href="#">Become a Supporter</a>
+                    <a href="#" id="sidebar-text">Become a Supporter</a>
                 </li>
                 <li>
-                    <a href="#">Featured Picture</a>
+                    <a href="#" id="sidebar-text">Featured Picture</a>
                 </li>
                 <li>
-                    <a href="#">Requests and Commissions</a>
+                    <a href="#" id="sidebar-text">Requests and Commissions</a>
                 </li>
                 <li>
-                    <a href="#">Characters</a>
+                    <a href="#" id="sidebar-text">Characters</a>
                 </li>
                 <li>
-                    <a href="#">Ask Drahcir</a>
+                    <a href="#" id="sidebar-text">Ask Drahcir</a>
                 </li>
                 <li>
-                    <a href="#">Policy on Contacting</a>
+                    <a href="#" id="sidebar-text">Policy on Contacting</a>
                 </li>
             </ul>
+
+          <form class="form-horizontal " action="/search" method="get" style="padding-left: 20px; padding-bottom: 20px;">
+              <div class="input-group">
+                
+                <input type="text" name="q" value="{SearchQuery}" class="form-control" placeholder="Search">
+              </div>
+             
+            </form>
         </div>    
             
         </div>
@@ -476,42 +565,7 @@
         </section>
 
 
-
-       
-
-            <section class="dropdownwrap" id="#rg" style="margin-bottom: 7%;">
-                    <div id="background" style="border-left: solid 5px;">
-                        <div id="wrapper" style="margin: 12%;">
-                            <h1 id="title" style="text-align: center; color: #fff;">The
-                            Requiem Project</h1>
-
-                            <div id="reqpro"></div>
-                            <p id="statment" style="padding: 60px 60px 0px 60px; margin-bottom: 3%; font-size: 1.3em; text-indent: 1.5em; text-align: left; line-height: 1.8em;">
-                            <span id="emphasis" style=
-                            "font-family: mirage; font-size: 1.3em;">Requiem</span> is
-                            a concept concieved as a futre group to promote <b id=
-                            "emphasis">creativity</b> and <b id="emphasis">free
-                            will</b> to the public. The idea is to <span id=
-                            "emphasis">add change to a society of the few</span> by not
-                            only <span id="emphasis">augmenting</span> the
-                            <i>thinking</i> of the individual, but by encouraging the
-                            spread of ideas. The mission as a group of <span id=
-                            "emphasis">free thinkers</span> that sail the international
-                            waters of the net, is finding the true meaning of <span id=
-                            "emphasis">freedom through design and
-                            self-expression</span>. We <i id="emphasis">liberate</i>
-                            thus burying old traditions and norms to usher forth a
-                            <i id="emphasis">new generation</i>.<br>
-                            <br>
-                            P.S. Feel free to go on to <a href=
-                            "drahcirii.deviantart.com/gallery">DeviantArt</a> to check
-                            out my gallery^^! My art won't bite... well maybe.
-                            <span id="emphasis">Peace♫!</span></p>
-                        </div>
-                    </div>
-                </section>
-
-            <section id="x" style="display: none;">
+             <section id="x" style="display: none;">
                 <div id="imagecap" style=" display: block; margin: 0 auto; box-shadow:12px rgba(255,0,0, 0.5); position: relative;">
                     <a href="#2"><img src="pics/cover.png" style="display: block; margin: 0 auto;width: 100%; height: 80%; border-top-left-radius: 10px; border-top-right-radius: 10px;"></a>
                 </div>
@@ -623,8 +677,6 @@
 
 
                #background{
-                  background-repeat: repeat-y;
-                  background-size: cover;
                   margin: 0 auto;
               }
 

@@ -173,13 +173,22 @@ html,body,#requiem-main{
     line-height: 0;
 }
 
- #sidebar-wrapper {
-                
-background: #000;
 
-}
 
 /* Sidebar Styles */
+
+#sidebar-inner {
+    background-color: #222;
+    border: solid 1px;
+    border-left: solid 5px;
+    border-color: #000;
+    box-shadow: inset 0 0 2px #000;
+}
+
+#sidebar-text{
+    overflow: hidden;
+    
+}
 
 .sidebar-nav {
     width: 100%;
@@ -191,19 +200,21 @@ background: #000;
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
-    font-size: 75%
+    font-size: 0.8em;
+    overflow: hidden;
+    
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #999;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: #bb0000;
+    background: #111;
 }
 
 .sidebar-nav li a:active,
@@ -311,7 +322,8 @@ body{
 #background {
     background-image: url(../pics/bg.png);
     background-attachment: scroll;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
+    background-size: 50%;
     font-family: 'Gothic';
 }
 
@@ -407,6 +419,20 @@ footer {
     overflow-y: auto;
 }
 
+@media screen and (max-width: 1024px) {
+
+    #banner{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    #banner{
+        margin-top: 20%;
+    }
+}
+
 @media screen and (max-width: 640px) {
     
     #sidebar{
@@ -431,6 +457,30 @@ footer {
     }
 }
 
+@media screen and (max-width: 994px) {
+
+    .dropdown-toggle {
+        font-size: 0.8em;
+    }
+
+     .aya-active {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .dropdown-toggle {
+        font-size: 100%;
+    }
+
+     .aya-active {
+        font-size: 100%;
+    }
+
+}
+
 
 
 @media screen and (min-width: 640px) {
@@ -446,14 +496,8 @@ footer {
 }
 
 
+/* --------Special Dropdowns-----------*/
 
-
-
-/*Loader Code*/
-/* Dropdown Controls 
-http://www.derby-web-design-agency.co.uk/blog-post/how-to-create-a-jquery-slidedown-toggle-effect-div-tutorial/22/
-
-*/
 .dropdownwrap {
     display: none;
 }
@@ -465,4 +509,297 @@ http://www.derby-web-design-agency.co.uk/blog-post/how-to-create-a-jquery-slided
 .konamiwrap {
     display: none;
 }
+
+.drahcirify{
+    background-image: url("../pics/pixelii.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center top;
+}
+
+#page-footer{
+    display: unset;
+    visibility: unset;
+}
+
+
+/*----------Loader Code---------------*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+
+    
+}
+
+
+
+
+
+#loader {
+    display: block;
+    position: relative;
+    left: 49%;
+    top: 45%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    z-index: 9999;
+}
+
+  
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        margin: 0 auto;
+        background: #000;
+        z-index: 1000;
+        
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+         background-image: url("../pics/border.png");
+        background-repeat: repeat-x;
+        background-size: cover;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+         background-image: url("../pics/border.png");
+        background-repeat: repeat-x;
+         background-size: cover;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+            }
+
+    /*Can be disabled for easy styling */
+    
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  
+            -ms-transform: translateY(-100%);  
+                transform: translateY(-100%);  
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    } 
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+
+ 
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
 

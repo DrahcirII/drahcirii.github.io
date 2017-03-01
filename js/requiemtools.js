@@ -4,12 +4,15 @@ $(document).ready(function(e) {
 
         $('.pagedownwrap').slideToggle();
         $("#requiem-main").addClass("remove");
+        $(".readysteadygo").addClass("drahcirify");
+        
+
 
         
        
     });
 
-})
+});
 
 $(document).ready(function(e) {
 
@@ -19,7 +22,7 @@ $(document).ready(function(e) {
 
     });
 
-})
+});
 
 $(document).ready(function(e) {
 
@@ -35,13 +38,7 @@ $(document).ready(function(e) {
 
     });
 
-})
-
-
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-     $("#loader").fadeOut("slow");
-})
+});
 
 
 
@@ -57,7 +54,7 @@ DropDown.prototype = {
             event.stopPropagation();
         });
     }
-}
+};
 $(function() {
     var dd = new DropDown($('#2'));
     $(document).click(function() {
@@ -72,4 +69,11 @@ $(".modal-wide").on("show.bs.modal", function() {
     $(this).find(".modal-body").css("max-height", height);
 });
 
+$(document).ready(function() {
+    
+    setTimeout(function(){
+        $('body').addClass('loaded');
+ }, 3000);
+    
+});
 
